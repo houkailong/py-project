@@ -2,6 +2,7 @@
 __author__ = 'houkl'
 import upstream
 import re
+import shutil
 class Upstream_Nginx(object):
     def __init__(self):
         self.info = upstream.upstream_format()
@@ -28,6 +29,8 @@ class Upstream_Nginx(object):
             ser = re.compile(r'\s*server ')
             if ser.findall(self.upstm_dist[i]):
                 ser_list = re.split('\s+|;',self.upstm_dist[i])
+                ser_list[0] = '\t\t'
+                ser_list[len(ser_list)-1] = '\n'
                 self.ser_dist[n] = ser_list
                 n += 1
         return self.ser_dist
@@ -43,33 +46,59 @@ class Upstream_Nginx(object):
     def Modify_ser(self,ser_num):
         for i,v in self.ser_dist.items():
             if i == ser_num:
-                v[3] = ';'
+                v1 = v[1:4]
+                v1[0],v1[2] = ('\t\t\t%s' % v1[0],';\n')
                 #.join 是将list转化成字符串
-                ser =' '.join(v)
+                ser =' '.join(v1)
             else:
-                v[4] = 'down;'
-                ser = ' '.join(v)
+                v1 = v[1:4]
+                v1[0],v1[2] = ('\t\t\t%s' % v1[0],'down;\n')
+                ser = ' '.join(v1)
             #此处开始修改upstream 段内容
             for m,k in self.upstm_dist.items():
                 if v[2] in k:
                     self.upstm_dist[m] = ser
-        print self.upstm_dist
+        pass
+
+    def Modify_nginx(self,ngf):
+        #修改nginx upstream 主机内容
+        self.nginx_dist = upstream.Nginx_dist(ngf)
+        for k in sorted(self.upstm_dist):
+            self.nginx_dist[k] = self.upstm_dist[k]
+        return self.nginx_dist
+        pass
+    def Write_nginx(self,ngf_n):
+        #将更新后的内容生成到新的文件
+        with file(ngf_n,'wb') as fn:
+            Ln = (self.nginx_dist[L] for L in sorted(self.nginx_dist))
+            for l in Ln:
+                fn.write(l)
         pass
 
 if __name__ == '__main__':
-    f2 = 'conf/nginx.conf'
+    f1 = 'conf/nginx.conf1'
+    f2 = 'conf/nginx.conf2'
     upstream_nginx = Upstream_Nginx()
     item=upstream_nginx.Choice_item()
     for a in [i for i in item]:
         print a[0],a[1]
     Item_num = raw_input(u'请输入项目序号：')
     ups_name = upstream_nginx.Find_upstm(Item_num)
-    ser_upstm = upstream_nginx.Ser_upstm(ups_name,f2)
-    #用于显示server 状态
+    ser_upstm = upstream_nginx.Ser_upstm(ups_name,f1)
+    #显示server 状态
     upstream_nginx.Show_ser()
     ser_num = int(raw_input(u'请输入提供服务的服务器编号：'))
     while not ser_upstm.has_key(ser_num):
         ser_num = int(raw_input(u'请输入提供服务的服务器编号：'))
     upstream_nginx.Modify_ser(ser_num)
+    upstream_nginx.Modify_nginx(f1)
+    #新建nginx.conf 配置文件
+    upstream_nginx.Write_nginx(f2)
+    #替换原文件
+    shutil.move(f2,f1)
+    #显示修改后的upstream 结果
+    ups_name = upstream_nginx.Find_upstm(Item_num)
+    ser_upstm = upstream_nginx.Ser_upstm(ups_name,f1)
+    upstream_nginx.Show_ser()
 
 

@@ -18,6 +18,17 @@ def upstream_format(f1='upstream_info.txt'):
         return data_dict
         pass
 
+def Nginx_dist(ngf):
+    #将nginx.conf 处理成字典，以行号为k，行内容为值
+    nginx_dist = {}
+    with file(ngf,'r') as f:
+        nginx_conf = (i for i in f.readlines())
+        L_num = 0
+        for L in nginx_conf:
+            nginx_dist[L_num] = L
+            L_num += 1
+    return nginx_dist
+    pass
 def Match_upstream(up_name,nginx_f):
     #匹配nginx.conf 中的upstream段落,返回以{[行号-1]:行内容} 形式的字典upstm_dist
     upstm_dist = {}
@@ -38,18 +49,17 @@ def Match_upstream(up_name,nginx_f):
                     L_num +=1
             L_num +=1
 
-def Modify_upstream():
-    pass
 
 
 if __name__ == '__main__':
     f1  = 'upstream_info.txt'
     f2 = 'conf/nginx.conf'
     up_name = 'p2p_oms'
+    print Nginx_dist(f2)
     #print upstream_format(f1)
 
     #for i in Match_upstream(f2,up_name):
     #    print i,
-    dist = Match_upstream(up_name,f2)
-    for i in sorted(dist):
-        print dist[i],
+    #dist = Match_upstream(up_name,f2)
+    #for i in sorted(dist):
+    #    print dist[i],
