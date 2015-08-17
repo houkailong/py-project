@@ -49,17 +49,5 @@ def Match_upstream(up_name,nginx_f):
                     L_num +=1
             L_num +=1
 
-
-
 if __name__ == '__main__':
-    f1  = 'upstream_info.txt'
-    f2 = 'conf/nginx.conf'
-    up_name = 'p2p_oms'
-    print Nginx_dist(f2)
-    #print upstream_format(f1)
-
-    #for i in Match_upstream(f2,up_name):
-    #    print i,
-    #dist = Match_upstream(up_name,f2)
-    #for i in sorted(dist):
-    #    print dist[i],
+    pass

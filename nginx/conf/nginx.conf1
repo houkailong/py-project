@@ -55,7 +55,7 @@ http
 
 		upstream p2p_oms {
 			server app_p2p_3:8080 ;
-			server app_p2p_4:8080 down;
+			server app_p2p_4:8080 ;
 			ip_hash;
                 }
 		upstream p2p_online {
@@ -64,9 +64,9 @@ http
 			ip_hash;
                 }
         	upstream p2p_m {
-			server app_p2p_3:8084;
-			server app_p2p_4:8084;
-                        ip_hash;
+			server app_p2p_3:8084 ;
+			server app_p2p_4:8084 ;
+            ip_hash;
                 }
 		upstream p2p_bbs {
 			server app_p2p_4:9080;
@@ -76,11 +76,11 @@ http
 			server app_p2p_3:8086;
 			server app_p2p_4:8086 down;
 		}
-                upstream hde_oms {
-                        server app_p2p_3:8090;
-                        server app_p2p_4:8090;
-                        ip_hash;
-                }
+        upstream hde_oms {
+                server app_p2p_3:8090;
+                server app_p2p_4:8090;
+                ip_hash;
+        }
 
 		upstream hde_online {
 			server app_p2p_3:8092;
@@ -88,37 +88,36 @@ http
 			ip_hash;
 		}
 
-                upstream jdy_oms {
-                        server app_p2p_3:8094;
-                        server app_p2p_4:8094;
-                        ip_hash;
-                }
+        upstream jdy_oms {
+                server app_p2p_3:8094;
+                server app_p2p_4:8094;
+                ip_hash;
 
-                upstream jdy_online {
-                        server app_p2p_3:8096 down;
-                        server app_p2p_4:8096;
-                        ip_hash;
-                }
-                upstream dubbo_admin {
-                        server app_p2p_3:8075;
-                        server app_p2p_4:8075;
-                        ip_hash;
-                }
-                upstream p2p_rxb {
-                        server app_p2p_3:8076;
-                        server app_p2p_4:8076;
-                        ip_hash;
-                }
-                upstream zhengzhou_bank {
-                        server app_p2p_3:8077;
-                        server app_p2p_4:8077;
-                        ip_hash;
-                }
-                upstream mm_online {
-                        server app_p2p_3:9080;
-                        server app_p2p_4:9080;
-                        ip_hash;
-                }
+        upstream jdy_online {
+                server app_p2p_3:8096 down;
+                server app_p2p_4:8096;
+                ip_hash;
+        }
+        upstream dubbo_admin {
+                server app_p2p_3:8075;
+                server app_p2p_4:8075;
+                ip_hash;
+        }
+        upstream p2p_rxb {
+                server app_p2p_3:8076;
+                server app_p2p_4:8076;
+                ip_hash;
+        }
+        upstream zhengzhou_bank {
+                server app_p2p_3:8077;
+                server app_p2p_4:8077;
+                ip_hash;
+        }
+        upstream mm_online {
+                server app_p2p_3:9080;
+                server app_p2p_4:9080;
+                ip_hash;
+        }
 #-------------- www.haodaibao.com END -------------------
 
 

@@ -17,8 +17,10 @@ class Upstream_Nginx(object):
         for a in self.Choice_item():
             if re_num.findall(a[0]):
                 #通过num 获取域名 a[1],后得到upstream 名字
-                upstream = self.info[a[1]]['upstream']
-                return upstream
+                self.upstream = self.info[a[1]]['upstream']
+                return self.upstream
+        else:
+            print u'%s 不符合要求' % num
 
     def Ser_upstm(self,ups_name,ng_conf):
         self.upstm_dist = upstream.Match_upstream(ups_name,ng_conf)
@@ -36,16 +38,22 @@ class Upstream_Nginx(object):
         return self.ser_dist
 
     def Show_ser(self):
+        print '*' * 40
+        print '\033[1;31;m%s\033[0m' % self.upstream
         for k,v in self.ser_dist.items():
             if 'down' in v[3]:
-                print '\033[1;31;m%s.%s\033[0m \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'down')
+                #print '\033[1;31;m%s.%s\033[0m \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'down')
+                print '%s.%s \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'down')
             else:
-                print '\033[1;31;m%s.%s\033[0m \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'up')
+                #print '\033[1;31;m%s.%s\033[0m \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'up')
+                print '%s.%s \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'up')
+        print '*' * 40 + '\n'
         pass
 
     def Modify_ser(self,ser_num):
+        ser_num_list = [int(x) for x in ser_num.split()]
         for i,v in self.ser_dist.items():
-            if i == ser_num:
+            if i in ser_num_list:
                 v1 = v[1:4]
                 v1[0],v1[2] = ('\t\t\t%s' % v1[0],';\n')
                 #.join 是将list转化成字符串
@@ -87,9 +95,10 @@ if __name__ == '__main__':
     ser_upstm = upstream_nginx.Ser_upstm(ups_name,f1)
     #显示server 状态
     upstream_nginx.Show_ser()
-    ser_num = int(raw_input(u'请输入提供服务的服务器编号：'))
-    while not ser_upstm.has_key(ser_num):
-        ser_num = int(raw_input(u'请输入提供服务的服务器编号：'))
+    #ser_num = int(raw_input(u'请输入提供服务的服务器编号：'))
+    ser_num = raw_input(u'请输入提供服务的服务器编号：')
+    #while not ser_upstm.has_key(ser_num):
+    #    ser_num = int(raw_input(u'请输入提供服务的服务器编号：'))
     upstream_nginx.Modify_ser(ser_num)
     upstream_nginx.Modify_nginx(f1)
     #新建nginx.conf 配置文件
