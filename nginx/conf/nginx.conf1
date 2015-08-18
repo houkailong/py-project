@@ -54,8 +54,8 @@ http
 #-------------- www.haodaibao.com  BEGIN ------------------
 
 		upstream p2p_oms {
-			server app_p2p_3:8080 ;
-			server app_p2p_4:8080 down;
+			server app_p2p_3:8080 down;
+			server app_p2p_4:8080 ;
 			ip_hash;
                 }
 		upstream p2p_online {
@@ -83,8 +83,8 @@ http
         }
 
 		upstream hde_online {
-			server app_p2p_3:8092;
-			server app_p2p_4:8092;
+			server app_p2p_3:8092 down;
+			server app_p2p_4:8092 ;
 			ip_hash;
 		}
 
@@ -157,7 +157,7 @@ http
 #-------------- qianbao Start -----------------------
 	upstream phoenix_service {
 		ip_hash;
-			server app_p2p_3:8081 down;
+			server app_p2p_3:8081 ;
 			server app_p2p_4:8081 down;
 	}
 
