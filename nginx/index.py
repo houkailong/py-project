@@ -10,11 +10,11 @@ def show_list():
     item_list = [i for i in item]
     print '*' * 40
     for b in range(len(item_list)):
+        #按upstream_info.txt中的序列顺序依次显示
         b += 1
-        order = re.compile(r'^%d' % b)
+        order = re.compile(r'^%s\.' % b)
         for li in item_list:
             if order.findall(li[0]):
-                #print '\033[1;31;m%s %s\033[0m '% (li[0],li[1])
                 print li[0],li[1]
     print '*' * 40 + '\n'
     global Item_num
@@ -29,14 +29,19 @@ def show_ser_static(f1,f2):
     pass
 
 def modify_ser(f1,f2):
-    show_ser_static(f1,f2)
-    ser_num = raw_input(u'请输入提供服务的服务器编号：')
-    upstream_nginx.Modify_ser(ser_num)
-    upstream_nginx.Modify_nginx(f1)
-    #新建nginx.conf 配置文件
-    upstream_nginx.Write_nginx(f2)
-    #替换原文件
-    shutil.move(f2,f1)
+    while True:
+        show_ser_static(f1,f2)
+        ser_num = raw_input(u'请输入提供服务的服务器编号：')
+        if ser_num:
+            upstream_nginx.Modify_ser(ser_num)
+            upstream_nginx.Modify_nginx(f1)
+            #新建nginx.conf 配置文件
+            upstream_nginx.Write_nginx(f2)
+            #替换原文件
+            shutil.move(f2,f1)
+            break
+        else:
+            print u'输入错误，请重新输入！'
     pass
 
 def nginx_switch(f1,f2):

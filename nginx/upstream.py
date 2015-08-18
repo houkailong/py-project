@@ -10,11 +10,12 @@ def upstream_format(f1='upstream_info.txt'):
         for i in [i for i in f.readlines()]:
             data = {}
             info = i.split()
-            data['host'] = info[2]
-            data['name'] = info[0]
-            data['upstream'] = info[1]
-            data['uuid'] = uuid.uuid4()
-            data_dict[data['host']] = data
+            if info:
+                data['host'] = info[2]
+                data['name'] = info[0]
+                data['upstream'] = info[1]
+                data['uuid'] = uuid.uuid4()
+                data_dict[data['host']] = data
         return data_dict
         pass
 
@@ -50,4 +51,4 @@ def Match_upstream(up_name,nginx_f):
             L_num +=1
 
 if __name__ == '__main__':
-    pass
+    upstream_format()
