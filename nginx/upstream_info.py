@@ -39,7 +39,7 @@ class Upstream_Nginx(object):
 
     def Show_ser(self):
         print '*' * 40
-        print '\033[1;31;m%s\033[0m' % self.upstream
+        print u'\033[1;31;mupstream名字：%s\033[0m' % self.upstream
         for k,v in self.ser_dist.items():
             if 'down' in v[3]:
                 #print '\033[1;31;m%s.%s\033[0m \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'down')

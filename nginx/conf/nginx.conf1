@@ -54,18 +54,18 @@ http
 #-------------- www.haodaibao.com  BEGIN ------------------
 
 		upstream p2p_oms {
-			server app_p2p_3:8080 down;
-			server app_p2p_4:8080 ;
+			server app_p2p_3:8080 ;
+			server app_p2p_4:8080 down;
 			ip_hash;
                 }
 		upstream p2p_online {
-			server app_p2p_3:8082 down;
-			server app_p2p_4:8082 ;
+			server app_p2p_3:8082 ;
+			server app_p2p_4:8082 down;
 			ip_hash;
                 }
         	upstream p2p_m {
 			server app_p2p_3:8084 ;
-			server app_p2p_4:8084 ;
+			server app_p2p_4:8084 down;
             ip_hash;
                 }
 		upstream p2p_bbs {
@@ -125,25 +125,25 @@ http
 	upstream Online_web {
 		ip_hash;
 			server app_p2p_3:8070 ;
-			server app_p2p_4:8070 down;
+			server app_p2p_4:8070 ;
 	}
 
 	upstream UserService {
 		ip_hash;
-		server app_p2p_3:8071;
-		server app_p2p_4:8071;
+			server app_p2p_3:8071 ;
+			server app_p2p_4:8071 ;
 	}
 
 	upstream BankServer {
 		ip_hash;
-		server app_p2p_3:8072;
-		server app_p2p_4:8072;
+			server app_p2p_3:8072 ;
+			server app_p2p_4:8072 ;
 	}
 
 	upstream PassPort {
 		ip_hash;
-		server app_p2p_3:8073;
-		server app_p2p_4:8073;
+			server app_p2p_3:8073 ;
+			server app_p2p_4:8073 ;
 	}
 
 	upstream Bank_oms {

@@ -5,6 +5,8 @@ import upstream_info
 import shutil
 import sys,re
 import commands
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 def show_list():
     item = upstream_nginx.Choice_item()
@@ -20,8 +22,12 @@ def show_list():
                     print li[0],li[1]
         print '*' * 40 + '\n'
         global Item_num
+        input_num = raw_input(u'请输入项目序号，可输入多个，之间用空格分隔：')
+        Item_num = [x for x in input_num.split()]
+        #Item_num = int(raw_input(u'请输入项目序号：'))
         try:
-            Item_num = int(raw_input(u'请输入项目序号：'))
+            for n in Item_num:
+                int(n)
             break
         except ValueError as e:
             print u'\033[1;31;40m请输入数字！\033[0m'
@@ -29,26 +35,41 @@ def show_list():
     pass
 
 def show_ser_static(f1):
-    ups_name = upstream_nginx.Find_upstm(Item_num)
-    global ser_upstm
-    ser_upstm = upstream_nginx.Ser_upstm(ups_name,f1)
-    upstream_nginx.Show_ser()
+    #获取到upstream 名字列表，以实现多项目同时操作，如银行平台
+    global ups_name_list
+    ups_name_list = []
+    for n in Item_num:
+        ups_name = upstream_nginx.Find_upstm(n)
+        ups_name_list.append(ups_name)
+        ser_upstm = upstream_nginx.Ser_upstm(ups_name,f1)
+        upstream_nginx.Show_ser()
     pass
 
 def modify_ser(f1,f2):
     while True:
         show_ser_static(f1)
-        ser_num = raw_input(u'请输入提供服务的服务器编号：')
-        if ser_num:
-            upstream_nginx.Modify_ser(ser_num)
-            upstream_nginx.Modify_nginx(f1)
-            #新建nginx.conf 配置文件
-            upstream_nginx.Write_nginx(f2)
-            #替换原文件
-            shutil.move(f2,f1)
-            break
-        else:
-            print u'输入错误，请重新输入！'
+        ser_num = raw_input(u'请输入留在线上的服务器编号，可选择多个，中间用空格分隔：')
+        #此处是利用show_ser_static 方法中的ups_name_list 变量来实现同时操作多项目的功能
+        for ups_name_l in ups_name_list:
+            upstream_nginx.Ser_upstm(ups_name_l,f1)
+            if ser_num:
+                try:
+                    for sn in ser_num.split():
+                        int(sn)
+                except ValueError as e:
+                    print u'请输入数字，需重新输入！'
+                    continue
+                upstream_nginx.Modify_ser(ser_num)
+                upstream_nginx.Modify_nginx(f1)
+                #新建nginx.conf 配置文件
+                upstream_nginx.Write_nginx(f2)
+                #替换原文件
+                shutil.move(f2,f1)
+                #break
+            else:
+                print u'至少输入一个，不能为空，请重新输入！'
+                continue
+        break
     pass
 
 def nginx_reload():
@@ -67,11 +88,11 @@ def nginx_reload():
 
 def nginx_switch(f1,f2):
     switch_dist = {
-        'show':(u'显示当前主机状态','show_ser_static(f1)'),
-        'modify':(u'修改主机状态','modify_ser(f1,f2)'),
-        'back':(u'返回上层','back'),
-        'exit':(u'退出','exit'),
-        'reload':(u'重新加载nginx配置文件','nginx_reload()')
+        'show':(u'\t显示当前主机状态','show_ser_static(f1)'),
+        'modify':(u'\t修改主机状态','modify_ser(f1,f2)'),
+        'back':(u'\t返回上层','back'),
+        'exit':(u'\t退出','exit'),
+        'reload':(u'\t重新加载nginx配置文件','nginx_reload()')
     }
     return switch_dist
     pass
