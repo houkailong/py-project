@@ -124,25 +124,25 @@ http
 #-------------- NEW Bank platform Start-----------------------
 	upstream Online_web {
 		ip_hash;
-			server app_p2p_3:8070 ;
+			server app_p2p_3:8070 down;
 			server app_p2p_4:8070 ;
 	}
 
 	upstream UserService {
 		ip_hash;
-			server app_p2p_3:8071 ;
+			server app_p2p_3:8071 down;
 			server app_p2p_4:8071 ;
 	}
 
 	upstream BankServer {
 		ip_hash;
-			server app_p2p_3:8072 ;
+			server app_p2p_3:8072 down;
 			server app_p2p_4:8072 ;
 	}
 
 	upstream PassPort {
 		ip_hash;
-			server app_p2p_3:8073 ;
+			server app_p2p_3:8073 down;
 			server app_p2p_4:8073 ;
 	}
 

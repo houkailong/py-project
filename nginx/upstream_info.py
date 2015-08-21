@@ -3,6 +3,7 @@ __author__ = 'houkl'
 import upstream
 import re
 import shutil
+import log,logging
 class Upstream_Nginx(object):
     def __init__(self):
         self.info = upstream.upstream_format()
@@ -42,15 +43,25 @@ class Upstream_Nginx(object):
         print u'\033[1;31;mupstream名字：%s\033[0m' % self.upstream
         for k,v in self.ser_dist.items():
             if 'down' in v[3]:
-                #print '\033[1;31;m%s.%s\033[0m \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'down')
                 print '%s.%s \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'down')
             else:
-                #print '\033[1;31;m%s.%s\033[0m \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'up')
                 print '%s.%s \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'up')
         print '*' * 40 + '\n'
         pass
 
-    def Modify_ser(self,ser_num):
+    def Log_w(self,upstm,server,status):
+        print
+        if status == 'down;':
+            sta = 'down'
+        elif status == ';':
+            sta = 'up'
+        else:
+            pass
+        log_info = '%s\t%s\t%s' % (upstm,server,sta)
+        logging.info(log_info)
+        pass
+
+    def Modify_ser(self,upstm,ser_num):
         ser_num_list = [int(x) for x in ser_num.split()]
         for i,v in self.ser_dist.items():
             if i in ser_num_list:
@@ -58,10 +69,14 @@ class Upstream_Nginx(object):
                 v1[0],v1[2] = ('\t\t\t%s' % v1[0],';\n')
                 #.join 是将list转化成字符串
                 ser =' '.join(v1)
+                ser_fat = re.split('\s+|\n',ser)
+                self.Log_w(upstm,ser_fat[2],ser_fat[3])
             else:
                 v1 = v[1:4]
                 v1[0],v1[2] = ('\t\t\t%s' % v1[0],'down;\n')
                 ser = ' '.join(v1)
+                ser_fat = re.split('\s+|\n',ser)
+                self.Log_w(upstm,ser_fat[2],ser_fat[3])
             #此处开始修改upstream 段内容
             for m,k in self.upstm_dist.items():
                 if v[2] in k:

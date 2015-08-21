@@ -1,0 +1,23 @@
+
+Fri, 21 Aug 2015 12:43:27 INFO PassPort app_p2p_3:8070 up
+Fri, 21 Aug 2015 12:43:27 INFO PassPort app_p2p_4:8070 down
+Fri, 21 Aug 2015 12:43:27 INFO PassPort app_p2p_3:8071 up
+Fri, 21 Aug 2015 12:43:27 INFO PassPort app_p2p_4:8071 down
+Fri, 21 Aug 2015 12:43:27 INFO PassPort app_p2p_3:8072 up
+Fri, 21 Aug 2015 12:43:27 INFO PassPort app_p2p_4:8072 down
+Fri, 21 Aug 2015 12:43:27 INFO PassPort app_p2p_3:8073 up
+Fri, 21 Aug 2015 12:43:27 INFO PassPort app_p2p_4:8073 down
+Fri, 21 Aug 2015 12:47:03 INFO BankServer app_p2p_3:8070 down
+Fri, 21 Aug 2015 12:47:03 INFO BankServer app_p2p_4:8070 up
+Fri, 21 Aug 2015 12:47:03 INFO BankServer app_p2p_3:8071 down
+Fri, 21 Aug 2015 12:47:03 INFO BankServer app_p2p_4:8071 up
+Fri, 21 Aug 2015 12:47:03 INFO BankServer app_p2p_3:8072 down
+Fri, 21 Aug 2015 12:47:03 INFO BankServer app_p2p_4:8072 up
+Fri, 21 Aug 2015 12:54:27 INFO Online_web app_p2p_3:8070 down
+Fri, 21 Aug 2015 12:54:27 INFO Online_web app_p2p_4:8070 up
+Fri, 21 Aug 2015 12:54:27 INFO UserService app_p2p_3:8071 down
+Fri, 21 Aug 2015 12:54:27 INFO UserService app_p2p_4:8071 up
+Fri, 21 Aug 2015 12:54:27 INFO BankServer app_p2p_3:8072 down
+Fri, 21 Aug 2015 12:54:27 INFO BankServer app_p2p_4:8072 up
+Fri, 21 Aug 2015 12:54:27 INFO PassPort app_p2p_3:8073 down
+Fri, 21 Aug 2015 12:54:27 INFO PassPort app_p2p_4:8073 up

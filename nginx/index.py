@@ -59,7 +59,7 @@ def modify_ser(f1,f2):
                 except ValueError as e:
                     print u'请输入数字，需重新输入！'
                     continue
-                upstream_nginx.Modify_ser(ser_num)
+                upstream_nginx.Modify_ser(ups_name_l,ser_num)
                 upstream_nginx.Modify_nginx(f1)
                 #新建nginx.conf 配置文件
                 upstream_nginx.Write_nginx(f2)
