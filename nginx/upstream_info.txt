@@ -1,19 +1,4 @@
 1.好贷宝后台 p2p_oms oms.haodaibao.com
 2.好贷宝主站 p2p_online www.haodaibao.com
-3.好贷宝手机端 p2p_m m.haidaobao.com
-4.邯郸E步-oms hde_oms bankoms.haodaibao.com
-5.邯郸银行 hde_online e.hdcb.cn
-6.金斗云-EOMS jdy_oms xyoms.haodaibao.com
-7.金斗云 jdy_online e.sxxrcb.com
-8.红包 p2p_hongbao hongbao.iapi.haodaibao.com
-9.银行平台-EOMS Bank_oms unionoms.haodaibao.com
-10.银行平台 Online_web bank_union_Online
-11.银行平台 UserService bank_union_UserService
-12.银行平台 BankServer bank_union_BankServer
-13.银行平台 PassPort bank_union_PassPort
-14.日息宝 p2p_rxb www.haodaibao.com/rxb
-15.郑州银行 zhengzhou_bank bankapi.haodaibao.com
-16.mm平台 mm_online mm.haodaibao.com
-17.phoenix phoenix_service rest.zhongrongjin.com
 
 

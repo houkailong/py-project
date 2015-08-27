@@ -97,9 +97,12 @@ def nginx_switch(f1,f2):
     return switch_dist
     pass
 
+def main():
+    pass
+
 if __name__ == '__main__':
     upstream_nginx = upstream_info.Upstream_Nginx()
-    f1 = 'conf/nginx.conf1'
+    f1 = 'conf/nginx.conf'
     f2 = 'conf/nginx.conf2'
     while True:
         show_list()

@@ -1,0 +1,17 @@
+1.tomcat-hde_online            2.tomcat-hde_oms                  3.tomcat-jdy_online                4.tomcat-jdy_oms
+
+5.tomcat-BUW_UserService       6.tomcat-BUW_BankServer           7.tomcat-BUW_PassPort              8.tomcat-BUW_Online_web
+
+9.tomcat-pay_biz	       10.tomcat-pay_bank		 11.tomcat-pay_settle               12.tomcat-pay_ppms
+
+13.tomcat-pay_auth	       14.tomcat-purse-member 		 15.tomcat-purse-account 	    16.tomcat-purse-web
+
+17.tomcat-zrj-base-service     18.tomcat-qb-admin                19.tomcat-qb-auth                  20.tomcat-zrj-sso
+
+21.tomcat-hdb_oms	       22.tomcat-hdb_website		 23.tomcat-hdb_mobile		    24.tomcat-rxb
+
+25.tomcat-hdb_dubbo	       26.tomcat-rxb_sales               27.tomcat-trade-web		    28.tomcat-member-web		    
+
+29.tomcat-manager-web          30.tomcat-merchant-web	         31.tomcat-account-web		    32.tomcat-settlement-web           
+
+33.tomcat-file-web             34.tomcat-weixin-web              35.tomcat-hdb_new_job

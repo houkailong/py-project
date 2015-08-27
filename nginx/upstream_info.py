@@ -42,7 +42,7 @@ class Upstream_Nginx(object):
         print '*' * 40
         print u'\033[1;31;mupstream名字：%s\033[0m' % self.upstream
         for k,v in self.ser_dist.items():
-            if 'down' in v[3]:
+            if 'down' in v:
                 print '%s.%s \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'down')
             else:
                 print '%s.%s \033[1;32;m[%s]\033[0m' % (k,v[2].split(':')[0],'up')
@@ -50,7 +50,6 @@ class Upstream_Nginx(object):
         pass
 
     def Log_w(self,upstm,server,status):
-        print
         if status == 'down;':
             sta = 'down'
         elif status == ';':
@@ -61,22 +60,51 @@ class Upstream_Nginx(object):
         logging.info(log_info)
         pass
 
+    def __Modify_ser(self,ser_list,req='up'):
+        '''
+        供Modify_ser 函数调整服务器状态使用
+        :param ser_list: upstream中server的list 格式
+        :param req: 要达到的一个需求：'up'表示上线，'down'表示下线
+        :return: 达到需求后的server list 结果
+        '''
+        if req == 'up':
+            if 'down' in ser_list:
+                ser_list[ser_list.index('down')] = ';'
+            else:
+                ser_list[ser_list.index('')] = ';'
+        elif req == 'down':
+            if 'down' in ser_list:
+                ser_list[ser_list.index('down')] = 'down;'
+            else:
+                ser_list[ser_list.index('')] = 'down;'
+        else:
+            pass
+        ser_list[0] = '\t\t\t'
+        return ser_list
+        pass
+
     def Modify_ser(self,upstm,ser_num):
         ser_num_list = [int(x) for x in ser_num.split()]
         for i,v in self.ser_dist.items():
             if i in ser_num_list:
-                v1 = v[1:4]
-                v1[0],v1[2] = ('\t\t\t%s' % v1[0],';\n')
+                req = 'up'
+                v1 = self.__Modify_ser(v,req)
                 #.join 是将list转化成字符串
                 ser =' '.join(v1)
                 ser_fat = re.split('\s+|\n',ser)
-                self.Log_w(upstm,ser_fat[2],ser_fat[3])
+                #self.Log_w(upstm,ser_fat[2],ser_fat[3])
             else:
-                v1 = v[1:4]
-                v1[0],v1[2] = ('\t\t\t%s' % v1[0],'down;\n')
+                req = 'down'
+                v1 = self.__Modify_ser(v,req)
                 ser = ' '.join(v1)
                 ser_fat = re.split('\s+|\n',ser)
-                self.Log_w(upstm,ser_fat[2],ser_fat[3])
+                #self.Log_w(upstm,ser_fat[2],ser_fat[3])
+            if ';' in ser_fat:
+                result = ';'
+            else:
+                result = 'down;'
+            self.Log_w(upstm,ser_fat[2],result)
+
             #此处开始修改upstream 段内容
             for m,k in self.upstm_dist.items():
                 if v[2] in k:

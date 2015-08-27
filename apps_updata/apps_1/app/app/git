@@ -1,0 +1,4 @@
+.git
+*/WEB-INF/classes/conf.properties
+*/WEB-INF/classes/log4j2.xml
+*/WEB-INF/classes/application.properties
