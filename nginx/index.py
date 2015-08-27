@@ -8,9 +8,18 @@ import commands
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-def show_list():
+def show_list(_num):
     item = upstream_nginx.Choice_item()
     item_list = [i for i in item]
+    global Item_num
+    input_num = _num
+    Item_num = [x for x in input_num.split()]
+    try:
+        for n in Item_num:
+            int(n)
+    except ValueError as e:
+        print u'\033[1;31;40m请输入数字！\033[0m'
+    '''
     while True:
         print '*' * 40
         for b in range(len(item_list)):
@@ -22,7 +31,8 @@ def show_list():
                     print li[0],li[1]
         print '*' * 40 + '\n'
         global Item_num
-        input_num = raw_input(u'请输入项目序号，可输入多个，之间用空格分隔：')
+        #input_num = raw_input(u'请输入项目序号，可输入多个，之间用空格分隔：')
+        input_num = _num
         Item_num = [x for x in input_num.split()]
         #Item_num = int(raw_input(u'请输入项目序号：'))
         try:
@@ -33,6 +43,7 @@ def show_list():
             print u'\033[1;31;40m请输入数字！\033[0m'
             continue
     pass
+    '''
 
 def show_ser_static(f1):
     #获取到upstream 名字列表，以实现多项目同时操作，如银行平台
@@ -45,10 +56,11 @@ def show_ser_static(f1):
         upstream_nginx.Show_ser()
     pass
 
-def modify_ser(f1,f2):
+def modify_ser(f1,f2,s_num):
     while True:
         show_ser_static(f1)
-        ser_num = raw_input(u'请输入留在线上的服务器编号，可选择多个，中间用空格分隔：')
+        #ser_num = raw_input(u'请输入留在线上的服务器编号，可选择多个，中间用空格分隔：')
+        ser_num = s_num
         #此处是利用show_ser_static 方法中的ups_name_list 变量来实现同时操作多项目的功能
         for ups_name_l in ups_name_list:
             upstream_nginx.Ser_upstm(ups_name_l,f1)
@@ -89,7 +101,7 @@ def nginx_reload():
 def nginx_switch(f1,f2):
     switch_dist = {
         'show':(u'\t显示当前主机状态','show_ser_static(f1)'),
-        'modify':(u'\t修改主机状态','modify_ser(f1,f2)'),
+        'modify':(u'\t修改主机状态','modify_ser(f1,f2,argv[2])'),
         'back':(u'\t返回上层','back'),
         'exit':(u'\t退出','exit'),
         'reload':(u'\t重新加载nginx配置文件','nginx_reload()')
@@ -97,15 +109,21 @@ def nginx_switch(f1,f2):
     return switch_dist
     pass
 
-def main():
-    pass
-
 if __name__ == '__main__':
+    #argv = sys.argv()[0:]
+    argv = ['1 2','modify','1 2']
     upstream_nginx = upstream_info.Upstream_Nginx()
     f1 = 'conf/nginx.conf'
     f2 = 'conf/nginx.conf2'
+    show_list(argv[0])
+    switch = nginx_switch(f1,f2)
+    Input_fun = argv[1]
+    if switch.has_key(Input_fun):
+        eval(switch[Input_fun][1])
+
+    '''
     while True:
-        show_list()
+        show_list(argv[0])
         while True:
             switch = nginx_switch(f1,f2)
             print '*' * 40
@@ -113,10 +131,12 @@ if __name__ == '__main__':
             for f,v in switch.items():
                 print f,v[0]
             print '*' * 40 + '\n'
-            Input_fun = raw_input(u'请选择功能：')
+            #Input_fun = raw_input(u'请选择功能：')
+            Input_fun = argv[1]
             if Input_fun == 'back':
                 break
             elif Input_fun == 'exit':
                 sys.exit(0)
             elif switch.has_key(Input_fun):
                 eval(switch[Input_fun][1])
+    '''
