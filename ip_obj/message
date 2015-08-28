@@ -1,0 +1,221 @@
+物理机	DELL	B-09-11	R630	cpu：E5-2640*2	suse	10.19.0.20/24	wjsa-sys01	 	管理类服务器
+172.19.0.20/16
+B-09-12	 	10.19.0.21/24	wjsa-sys02	 	管理类服务器
+172.19.0.21/16
+B-09-11	mem：4*16	10.19.2.21/24	wjsa-app01	 	应用类服务器
+172.19.2.21/16
+B-09-12	 	10.19.2.22/24	wjsa-app02	 	应用类服务器
+172.19.2.22/16
+B-09-13	disk：2*300-15k、6*600-10k	10.19.2.23/24	wjsa-app03	 	应用类服务器
+172.19.2.23/24
+B-09-11	 	10.19.2.24/24	wjsa-app04	 	应用类服务器
+172.19.2.24/24
+B-09-12	 	10.19.2.25/24	wjsa-app05	 	应用类服务器
+172.19.2.25/24
+B-09-13	 	10.19.2.26/24	wjsa-app06	 	应用类服务器
+172.19.2.26/24
+B-09-11	 	10.19.1.21/24	wjsa-base01	 	基础服务
+172.19.1.21/24
+B-09-12	 	10.19.1.22/24	wjsa-base02	 	基础服务
+172.19.1.22/24
+ 	 	10.19.1.23/24	wjsa-base03	 	基础服务
+172.19.1.23/24
+B-09-11	 	10.19.2.27/24	wjsa-o2o01	 	o2o产品独立服务
+172.19.2.27/24
+B-09-12	 	10.19.2.28/24	wjsa-o2o02	 	o2o产品独立服务
+172.19.2.28/24
+ 	B-09-11	R730	cpu：E5-2640*2	centos6.6	10.19.3.20/24	wjdb-mdb01	 	数据库主
+mem：8*16	172.19.3.20/24
+B-09-12	disk：10*1.2T-10k	10.19.3.21/24	wjdb-mdb02	 	数据库备
+172.19.3.21/24
+B-09-13	 	10.19.3.22/24	wjdb-mdb03	 	数据库备
+172.19.3.22/24
+物理机	DELL	B-09-14	R730 xd	cpu：E5-2640*2	centos6.6	10.19.16.30/24	wjsa-tsl01	 	大数据服务器，datenode节点
+172.19.16.30/24
+B-09-14	 	 	10.19.16.31/24	wjsa-tsl02
+172.19.16.31/24
+B-09-14	mem：8*16	 	10.19.16.32/24	wjsa-tsl03
+172.19.16.32/24
+B-09-14	disk：2*300-15k、12*4T-7.2k	 	10.19.16.33/24	wjsa-tsl04
+172.19.16.33/24
+B-09-14	 	 	10.19.16.34/24	wjsa-tsl05
+172.19.16.34/24
+B-09-14	 	 	10.19.16.35/24	wjsa-tsl06
+172.19.16.35/24
+B-09-14	 	 	10.19.16.36/24	wjsa-tsl07
+172.19.16.36/24
+B-09-14	 	 	10.19.16.37/24	wjsa-tsl08
+172.19.16.37/24
+物理机	DELL	 	R630	cpu：E5-2640*2	centos6.6	10.19.16.20/24	wjsa-tsl01	 	大数据的master节点
+
+ 	mem：4*16	172.19.16.20/24
+ 	disk：2*600G-10k	10.19.16.21/24	wjsa-tsl02
+
+ 	172.19.16.21/24
+ 	 	cpu：E5-2640*2	10.19.16.22/24	wjsa-tsl03	 	大数据的master节点，同时放日志
+
+ 	mem：4*16	172.19.16.22/24
+ 	disk：2*600G-10k、4*1T-7.2k
+物理机	DELL	B-09-13	 	cpu：E5-2640*2	centos6.6	10.19.2.29/24	wjsa-log01	 	日志服务器
+mem：4*8	172.19.2.29/24
+disk：2*300G-15k、4*2T-7.2k
+虚拟机	xen	wjsa-sys01	无	2C-4G-30G	centos6.6	10.19.0.30/24	wjsa-ntp01	无	时间服务器	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys02	无	2C-4G-30G	centos6.6	10.19.0.31/24	wjsa-ntp02	无	时间服务器	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys01	无	4C-8G-30G	centos6.6	10.19.0.32/24	wjsa-lvs01	无	四层负责均衡	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys02	无	4C-8G-30G	centos6.6	10.19.0.33/24	wjsa-lvs02	无	四层负责均衡	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys01	无	2C-4G-30G	centos6.6	10.19.0.34/24	wjsa-tng01	无	内测-七层负责均衡	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys01	无	4C-8G-30G	centos6.6	10.19.0.35/24	wjsa-tng02	无	生产-七层负责均衡	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys02	无	4C-8G-30G	centos6.6	10.19.0.36/24	wjsa-tng03	无	生产-七层负责均衡	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys01	无	4c-8G-100G	centos6.6	10.19.0.37/24	wjsa-jk01	无	监控	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys02	无	4c-8G-100G	centos6.6	10.19.0.38/24	wjsa-jk02	无	监控
+虚拟机	xen	wjsa-sys01	无	1C-2G-30G	centos6.6	10.19.0.39/24	wjsa-dns01	无	内侧dns	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys01	无	2C-4G-30G	centos6.6	10.19.0.40/24	wjsa-dns02	无	生产dns	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys02	无	2C-4G-30G	centos6.6	10.19.0.41/24	wjsa-dns03	无	生产dns	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys01	无	2C-4G-30G	centos6.6	10.19.0.42/24	wjsa-sa01	无	运维管理机	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys02	无	2C-4G-30G	centos6.6	10.19.0.43/24	wjsa-sa02	无	运维管理机	 	无	无	无	无	无
+虚拟机	xen	wjsa-sys02	无	2C-4G-30G	centos6.6	10.19.0.44/24	wjsa-bak01	无	内测dns、nginx的备份机	 	无	无	无	无	无
+虚拟机	xen	 	无	4c-16G-430G	centos6.6	10.19.0.45	wjdb-dbtest	无	内测数据库	 	无	无	无	无	无
+虚拟机	xen	wjsa-app01	无	1C-2G-30G	centos6.6	10.19.2.51/24	wjsa-mos01	无	好贷宝后台	 	无	无	无	无	无
+虚拟机	xen	wjsa-app01	无	2C-4G-30G	centos6.6	10.19.2.93/24	wjsa-hdb03	无	好贷宝主站	 	无	无	无	无	无
+虚拟机	xen	wjsa-app01	无	2C-4G-30G	centos6.6	10.19.2.62/24	wjsa-m02	无	好贷宝手机端	 	无	无	无	无	无
+虚拟机	xen	wjsa-app01	无	1C-2G-30G	centos6.6	10.19.2.73/24	wjsa-bo01	无	邯郸E步-oms	 	无	无	无	无	无
+虚拟机	xen	wjsa-app01	无	2C-4G-30G	centos6.6	10.19.2.103/24	wjsa-hd03	无	邯郸银行	 	无	无	无	无	无
+虚拟机	xen	wjsa-app01	无	2C-4G-30G	centos6.6	10.19.2.82/24	wjsa-jo02	无	金斗云-EOMS	 	无	无	无	无	无
+虚拟机	xen	wjsa-app01	无	2C-4G-30G	centos6.6	10.19.2.182/24	wjsa-hb02	无	红包api	 	无	无	无	无	无
+虚拟机	xen	wjsa-app02	无	2C-4G-30G	centos6.6	10.19.2.52/24	wjsa-mos02	无	好贷宝后台	 	无	无	无	无	无
+虚拟机	xen	wjsa-app02	无	1C-2G-30G	centos6.6	10.19.2.91/24	wjsa-hdb01	无	好贷宝主站	 	无	无	无	无	无
+虚拟机	xen	wjsa-app02	无	2C-4G-30G	centos6.6	10.19.2.63/2	wjsa-m03	无	好贷宝手机端	 	无	无	无	无	无
+虚拟机	xen	wjsa-app02	无	2C-4G-30G	centos6.6	10.19.2.73/24	wjsa-bo02	无	邯郸E步-oms	 	无	无	无	无	无
+虚拟机	xen	wjsa-app02	无	1C-2G-30G	centos6.6	10.19.2.101/24	wjsa-hd01	无	邯郸银行	 	无	无	无	无	无
+虚拟机	xen	wjsa-app02	无	2C-4G-30G	centos6.6	10.19.2.83/24	wjsa-jo03	无	金斗云-EOMS	 	无	无	无	无	无
+虚拟机	xen	wjsa-app02	无	1C-2G-30G	centos6.6	10.19.2.181/24	wjsa-hb01	无	红包api	 	无	无	无	无	无
+虚拟机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.53/24	wjsa-mos03	无	好贷宝后台	 	无	无	无	无	无
+虚拟机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.92/24	wjsa-hdb02	无	好贷宝主站	 	无	无	无	无	无
+虚拟机	xen	wjsa-app03	无	1C-2G-30G	centos6.6	10.19.2.61/24	wjsa-m01	无	好贷宝手机端	 	无	无	无	无	无
+虚拟机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.74/24	wjsa-bo03	无	邯郸E步-oms	 	无	无	无	无	无
+虚拟机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.102/24	wjsa-hd02	无	邯郸银行	 	无	无	无	无	无
+虚拟机	xen	wjsa-app03	无	1C-2G-30G	centos6.6	10.19.2.81/24	wjsa-jo01	无	金斗云-EOMS	 	无	无	无	无	无
+虚拟机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.183/24	wjsa-hb03	无	红包api	 	无	无	无	无	无
+虚拟机	xen	wjsa-app04	无	1C-2G-30G	centos6.6	10.19.2.111/24	wjsa-jdy01	无	金斗云	 	无	无	无	无	无
+虚拟机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.173/24	wjsa-bbs03	无	好贷宝dubbo	 	无	无	无	无	无
+虚拟机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.122/24	wjsa-bku02	无	UserService	 	无	无	无	无	无
+虚拟机	xen	wjsa-app04	无	1C-2G-30G	centos6.6	10.19.2.131/24	wjsa-bkb01	无	BankServer	 	无	无	无	无	无
+虚拟机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.153/24	wjsa-bkp03	无	PassPort	 	无	无	无	无	无
+虚拟机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.142/24	wjsa-rxb02	无	日息宝	 	无	无	无	无	无
+虚拟机	xen	wjsa-app04	无	1C-2G-30G	centos6.6	10.19.2.161/24	wjsa-bkm01	无	银行平台-EOMS	 	无	无	无	无	无
+虚拟机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.112/24	wjsa-jdy02	无	金斗云	 	无	无	无	无	无
+虚拟机	xen	wjsa-app05	无	1C-2G-30G	centos6.6	10.19.2.171/24	wjsa-hdubbo01	无	好贷宝dubbo	 	无	无	无	无	无
+虚拟机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.156/24	wjsa-bku03	无	UserService	 	无	无	无	无	无
+虚拟机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.158/24	wjsa-bkb02	无	BankServer	 	无	无	无	无	无
+虚拟机	xen	wjsa-app05	无	1C-2G-30G	centos6.6	10.19.2.151/24	wjsa-bkp01	无	PassPort	 	无	无	无	无	无
+虚拟机	xen	 	无	2C-4G-30G	centos6.6	10.19.2.143/24	wjsa-rxb03	无	日息宝	 	无	无	无	无	无
+虚拟机	xen	 	无	2C-4G-200G	centos6.6	10.19.2.148/24	wjsa-wlg01	无	大数据	 	无	无	无	无	无
+虚拟机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.162/24	wjsa-bkm02	无	银行平台-EOMS	 	无	无	无	无	无
+虚拟机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.113/24	wjsa-jdy03	无	金斗云	 	无	无	无	无	无
+虚拟机	xen	 	无	2C-4G-200G	centos6.6	10.19.2.149/24	wjsa-wlg02	 	大数据	 	无	无	无	无	无
+虚拟机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.172/24	wjsa-hdubbo02	无	好贷宝dubbo	 	无	无	无	无	无
+虚拟机	xen	wjsa-app06	无	1C-2G-30G	centos6.6	10.19.2.121/24	wjsa-bku01	无	UserService	 	无	无	无	无	无
+虚拟机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.133/24	wjsa-bkb03	无	BankServer	 	无	无	无	无	无
+虚拟机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.152/24	wjsa-bkp02	无	PassPort	 	无	无	无	无	无
+虚拟机	xen	 	无	1C-2G-30G	centos6.6	10.19.2.141/24	wjsa-rxb01	无	日息宝	 	无	无	无	无	无
+虚拟机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.163/24	wjsa-bkm03	无	银行平台-EOMS	 	无	无	无	无	无
+
+虚拟机	xen	 	无	1c-2g-30G	centos6.6	10.19.2.191	wjsa-paybiz01	无	业务前置（BIZ）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.192	wjsa-paybiz02	无	业务前置（BIZ）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.193	wjsa-paybiz03	无	业务前置（BIZ）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.194	wjsa-paybiz04	无	业务前置（BIZ）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.195	wjsa-paybiz05	无	业务前置（BIZ）	 	无	无	无	无	无
+虚拟机	xen	 	无	1c-2g-30G	centos6.6	10.19.2.196	wjsa-paybank01	无	银行渠道（BANK）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.197	wjsa-paybank02	无	银行渠道（BANK）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.198	wjsa-paybank03	无	银行渠道（BANK）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.199	wjsa-paybank04	无	银行渠道（BANK）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.210	wjsa-paybank05	无	银行渠道（BANK）	 	无	无	无	无	无
+虚拟机	xen	 	无	1c-2g-100G	centos6.6	10.19.2.211	wjsa-settle01	无	结算对账（SETTLE）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-100G	centos6.6	10.19.2.212	wjsa-settle02	无	结算对账（SETTLE）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.213	wjsa-settle03	无	结算对账（SETTLE）	 	无	无	无	无	无
+虚拟机	xen	 	无	1c-2g-30G	centos6.6	10.19.2.214	wjsa-payppms01	无	支付平台管理系统（PPMS）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.215	wjsa-payppms02	无	支付平台管理系统（PPMS）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.216	wjsa-payppms03	无	支付平台管理系统（PPMS）	 	无	无	无	无	无
+虚拟机	xen	 	无	1c-2g-30G	centos6.6	10.19.2.217	wjsa-payauth01	无	认证中心（AUTH）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.218	wjsa-payauth02	无	认证中心（AUTH）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.219	wjsa-payauth03	无	认证中心（AUTH）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.220	wjsa-payauth04	无	认证中心（AUTH）	 	无	无	无	无	无
+虚拟机	xen	 	无	2c-4g-30G	centos6.6	10.19.2.221	wjsa-payauth05	无	商户中心	 	无	无	无	无	无
+虚拟机	xen	 	无	2C-4G-30G	centos6.6	10.19.2.143/24	wjsa-bko03	无	南昌银行	 	无	无	无	无	无
+虚拟机	xen	 	无	2C-4G-30G	centos6.6	10.19.2.230/24	wjsa-test01	无	测试组-灰度测试机	 	无	无	无	无	无
+虚拟机	xen	 	无	2C-4G-30G	centos6.6	10.19.2.201/24	wjsa-hg201	无	合规项目	 	无	无	无	无	无
+
+物理机	xen	 	无	 	 	10.19.1.21	wjsa-base01	 	NFS（主）
+物理机	xen	 	无	 	 	10.19.1.22	wjsa-base02	 	NFS（备）
+物理机	xen	 	无	 	 	10.19.1.22	wjsa-base02	 	rabbitMQ
+物理机	xen	 	无	 	 	10.19.1.23	wjsa-base03
+虚拟机	xen	wjsa-app01	无	2C-4G-30G	centos6.6	10.19.2.30	wjsa-mq03
+虚拟机	xen	wjsa-app02	无	2C-4G-30G	centos6.6	10.19.2.31	wjsa-mq04
+虚拟机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.70	wjsa-mq05
+物理机	xen	 	无	 	 	10.19.1.21	wjsa-base01	 	redis（备）
+虚拟机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.32	wjsa-rds01	 	redis（主）
+虚拟机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.71	wjsa-rds02	 	redis（预发布）
+虚拟机	xen	wjsa-app01	无	2C-4G-30G	centos6.6	10.19.2.33	wjsa-zk01	 	zookeeper
+
+虚机机	xen	wjsa-app02	无	2C-4G-30G	centos6.6	10.19.2.34	wjsa-zk02
+虚机机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.35	wjsa-zk03
+虚机机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.36	wjsa-zk04
+虚机机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.37	wjsa-zk05
+虚机机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.72	wjsa-zk06	 	zookeeper（预发布）
+虚机机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.38	wjsa-cache01	 	缓存服务
+虚机机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.39	wjsa-cache02
+虚机机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.40	wjsa-cache03
+虚机机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.41	wjsa-sms01	 	短信服务
+虚机机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.42	wjsa-sms02
+虚机机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.43	wjsa-sso01	 	SSO服务
+虚机机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.44	wjsa-sso02
+虚机机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.45	wjsa-sso03
+虚机机	xen	wjsa-app01	无	2C-4G-30G	centos6.6	10.19.2.46	wjsa-bkg01	 	后台权限服务
+虚机机	xen	wjsa-app02	无	2C-4G-30G	centos6.6	10.19.2.47	wjsa-bkg02
+虚机机	xen	wjsa-app01	无	2C-4G-30G	centos6.6	10.19.2.48	wjsa-mem01	 	会员服务
+虚机机	xen	wjsa-app02	无	2C-4G-30G	centos6.6	10.19.2.49	wjsa-mem02
+虚机机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.50	wjsa-mem03
+虚机机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.54	wjsa-acc01	 	账户服务
+虚机机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.55	wjsa-acc02
+虚机机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.56	wjsa-acc03
+虚机机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.57	wjsa-qbweb01	 	钱包web
+虚机机	xen	wjsa-app04	无	2C-4G-30G	centos6.6	10.19.2.58	wjsa-qbweb02
+虚机机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.59	wjsa-qbweb03
+虚机机	xen	wjsa-app05	无	2C-4G-30G	centos6.6	10.19.2.60	wjsa-qbapi01	 	钱包API
+虚机机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.61	wjsa-qbapi02
+虚机机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.62	wjsa-qbapi03
+虚机机	xen	wjsa-app06	无	2C-4G-30G	centos6.6	10.19.2.64	wjsa-qbbkg01	 	钱包后台管理
+虚机机	xen	wjsa-app03	无	2C-4G-30G	centos6.6	10.19.2.65	wjsa-qbbkg02
+虚机机	xen	wjsa-o2o02	无	1c-2g-30G	centos6.6	10.19.2.94	wjsa-qstrade01	 	钱包生活-trade
+虚机机	xen	wjsa-o2o02	无	1c-2g-30G	centos6.6	10.19.2.95	wjsa-qstrade02	 	未部署
+虚机机	xen	wjsa-o2o02	无	1c-2g-30G	centos6.6	10.19.2.96	wjsa-qstrade03	 	未部署
+虚机机	xen	wjsa-o2o02	无	1c-2g-30G	centos6.6	10.19.2.97	wjsa-qsmember01	 	钱包生活-member
+虚机机	xen	wjsa-o2o02	无	1c-2g-30G	centos6.6	10.19.2.98	wjsa-qsmember02	 	未部署
+虚机机	xen	wjsa-o2o02	无	1c-2g-30G	centos6.6	10.19.2.99	wjsa-qsmember03	 	未部署
+虚机机	xen	wjsa-o2o02	无	1c-2g-30G	centos6.6	10.19.2.104	wjsa-qsmanager01	 	钱包生活-manager
+虚机机	xen	wjsa-o2o02	无	1c-2g-30G	centos6.6	10.19.2.105	wjsa-qsmanager02	 	未部署
+虚机机	xen	wjsa-o2o02	无	1c-2g-30G	centos6.6	10.19.2.106	wjsa-qsmanager03	 	未部署
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.74	wjsa-qsmerchant01	 	钱包生活-merchant
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.75	wjsa-qsmerchant02	 	未部署
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.76	wjsa-qsmerchant03	 	未部署
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.77	wjsa-qsaccount01	 	钱包生活-account
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.78	wjsa-qsaccount02	 	未部署
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.79	wjsa-qsaccount03	 	未部署
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.84	wjsa-qsfile01	 	钱包生活-file
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.85	wjsa-qsfile02	 	未部署
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.86	wjsa-qsfile03	 	未部署
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.87	wjsa-qsweixin01	 	钱包生活-weixin
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.88	wjsa-qsweixin02	 	未部署
+虚机机	xen	wjsa-o2o01	无	1c-2g-30G	centos6.6	10.19.2.89	wjsa-qsweixin03	 	未部署
+虚拟机	xen	wjsa-apps01	无	1c-2g-30G	centos6.6	10.19.2.125	wjsa-test_apps01 	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps01	无	1c-2g-30G	centos6.6	10.19.2.126	wjsa-test_apps02	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps02	无	1c-2g-30G	centos6.6	10.19.2.127	wjsa-test_apps03	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps02	无	1c-2g-30G	centos6.6	10.19.2.128	wjsa-test_apps04	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps03	无	1c-2g-30G	centos6.6	10.19.2.129	wjsa-test_apps05	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps03	无	1c-2g-30G	centos6.6	10.19.2.134	wjsa-test_apps06	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps04	无	1c-2g-30G	centos6.6	10.19.2.135	wjsa-test_apps07	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps04	无	1c-2g-30G	centos6.6	10.19.2.136	wjsa-test_apps08	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps05	无	1c-2g-30G	centos6.6	10.19.2.123	wjsa-test_apps09	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps05	无	1c-2g-30G	centos6.6	10.19.2.124	wjsa-test_apps10	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps06	无	1c-2g-30G	centos6.6	10.19.2.137	wjsa-test_apps11	 	基础环境已经搭建完成
+虚拟机	xen	wjsa-apps06	无	1c-2g-30G	centos6.6	10.19.2.138	wjsa-test_apps12	 	基础环境已经搭建完成
