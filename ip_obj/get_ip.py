@@ -3,6 +3,10 @@ __author__ = 'houkailong'
 import re
 import sys
 def __GetIP():
+    '''
+    从message文件中获取ip
+    :return:
+    '''
     re_ip = re.compile(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}')
     with file('message') as f:
         for line in f.readlines():
