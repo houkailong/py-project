@@ -1,0 +1,5 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+wiki.haodaibao.com	FALSE	/	FALSE		JSESSIONID	34E0304F6083B4F00AC10B21FB6DB55A

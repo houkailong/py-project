@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>硬件资产管理 - 运维组 - Confluence</title>
+
+        
+
+                        
+    
+                        
+    
+                        
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="http://wiki.haodaibao.com">
+
+<meta id="atlassian-token" name="atlassian-token" content="5b810b640f44edad2a221e6dea79bd8cba1ba9c3">
+
+<meta id="confluence-space-key" name="confluence-space-key" content="ops">
+<script type="text/javascript">
+        var contextPath = '';
+</script>
+
+    
+
+<!-- include system css resources -->
+
+
+    <link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/17/_/download/superbatch/css/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/17/_/download/superbatch/css/batch.css?media=print" media="print">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/17/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/17/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+8" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/17/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/16daa84cc54b3a4153269dbec6cd8c90/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general,plugin.quick.comment.pre/batch.css" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/16daa84cc54b3a4153269dbec6cd8c90/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general,plugin.quick.comment.pre/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/70f6d025b64de5008ccd042576cd8d90/_/download/contextbatch/css/page/batch.css" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/70f6d025b64de5008ccd042576cd8d90/_/download/contextbatch/css/page/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/47016f6b93087cd2003bf867318254ee/_/download/contextbatch/css/theme.doc/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/1.3/_/download/batch/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources.css" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/1.3/_/download/batch/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/5.3.3-m6/_/download/batch/confluence.extra.jira:web-resources-adg/confluence.extra.jira:web-resources-adg.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/1.5.15/_/download/batch/com.comalatech.adhoccanvas:canvas-blueprint-resources/com.comalatech.adhoccanvas:canvas-blueprint-resources.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/1.5.15/_/download/batch/com.comalatech.adhoccanvas:canvas-blueprint-resources/com.comalatech.adhoccanvas:canvas-blueprint-resources.css?ieonly=true" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/1/_/styles/colors.css?spaceKey=ops" media="all">
+<link type="text/css" rel="stylesheet" href="/s/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/1/_/styles/custom.css?spaceKey=ops" media="all">
+
+<!-- end system css resources -->
+
+    <meta name="confluence-request-time" content="1441263437947">
+        
+    
+        
+            <meta name="ajs-is-confluence-admin" content="false">
+            <meta name="ajs-connection-timeout" content="10000">
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-show-space-welcome-dialog" content="true">
+            <meta name="ajs-keyboardshortcut-hash" content="863300b2da0e2705b8f22ffbf2753a8d">
+            
+
+    
+            
+    
+    
+            <meta name="ajs-page-id" content="2523729">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-page-title" content="硬件资产管理">
+            <meta name="ajs-parent-page-title" content="资产信息类文档">
+            <meta name="ajs-parent-page-id" content="2523760">
+            <meta name="ajs-space-key" content="ops">
+            <meta name="ajs-space-name" content="运维组">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-can-remove-page" content="false">
+            <meta name="ajs-user-display-name" content="侯凯龙">
+            <meta name="ajs-editor.loader.comment.resources" content="&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/9f01679814e63f4c0513d02c90477002/_/download/contextbatch/css/comment-editor/batch.css&quot; media=&quot;all&quot;&gt;
+">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="http://wiki.haodaibao.com">
+            <meta name="ajs-version-number" content="5.4.4">
+            <meta name="ajs-build-number" content="4733">
+            <meta name="ajs-remote-user" content="houkl">
+            <meta name="ajs-current-user-fullname" content="侯凯龙">
+            <meta name="ajs-current-user-avatar-url" content="/images/icons/profilepics/default.png">
+            <meta name="ajs-static-resource-url-prefix" content="/s/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="10485760">
+            <meta name="ajs-user-locale" content="zh_CN">
+            <meta name="ajs-enabled-dark-features" content="sync.event">
+            <meta name="ajs-atl-token" content="5b810b640f44edad2a221e6dea79bd8cba1ba9c3">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-editor.loader.resources" content="&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/667b9af93551d70c39b1eecf4cf815fd/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/667b9af93551d70c39b1eecf4cf815fd/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css?media=%28max-width%3A+1450px%29&quot; media=&quot;(max-width: 1450px)&quot;&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/667b9af93551d70c39b1eecf4cf815fd/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css?conditionalComment=lt+IE+9&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/667b9af93551d70c39b1eecf4cf815fd/_/download/contextbatch/js/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.js&quot; &gt;&lt;/script&gt;
+">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch/osd.action" title="Confluence"/>
+
+    <!-- include system javascript resources -->
+    <script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/17/_/download/superbatch/js/batch.js" ></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/17/_/download/superbatch/js/batch.js?conditionalComment=lte+IE+8" ></script>
+<![endif]-->
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/16daa84cc54b3a4153269dbec6cd8c90/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general,plugin.quick.comment.pre/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/70f6d025b64de5008ccd042576cd8d90/_/download/contextbatch/js/page/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/84fc2bb4cbbfc06481d75335376bb250/_/download/contextbatch/js/atl.comments/batch.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/1.3/_/download/batch/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources/com.atlassian.confluence.plugins.confluence-highlight-actions:highlighting-experiment-resources.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/1.3/_/download/batch/com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor/com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor.js" ></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/1.5.15/_/download/batch/com.comalatech.adhoccanvas:canvas-blueprint-resources/com.comalatech.adhoccanvas:canvas-blueprint-resources.js" ></script>
+
+    
+
+        
+    <!-- end system javascript resources -->
+
+        
+        
+
+    
+                <link rel="canonical" href="http://wiki.haodaibao.com/pages/viewpage.action?pageId=2523729">
+        <link rel="shortlink" href="http://wiki.haodaibao.com/x/UYIm">
+    <meta name="wikilink" content="[ops:硬件资产管理]">
+    <meta name="page-version" content="33">
+
+</head>
+
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+
+        
+    <div id="full-height-container">
+    <div id="header-precursor">
+        
+                    </div>
+
+
+
+
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="/"><img src="/s/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/_/images/logo/confluence-logo.png" alt="Confluence" /></a></h1><ul class="aui-nav">
+                            <li>
+            
+        
+        
+<a  id="space-directory-link" href="/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="空间">
+            <span>空间</span>
+    </a>
+        </li>
+                    <li>
+            
+    
+        
+<a  id="people-directory-link" href="/peopledirectory.action"  class=" aui-nav-imagelink"   title="人员">
+            <span>人员</span>
+    </a>
+        </li>
+                                    <li id="browseMenu" role="menu">
+            
+    
+        <a id="browse-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="browse-menu-link-content" title="浏览">
+        <span class="browse">浏览</span>
+    </a>
+    <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+    
+            
+<a  id="space-pages-link" href="/pages/listpages.action?key=ops" class="    "      title="浏览运维组空间的页面" >
+        页面
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-blogposts-link" href="/pages/viewrecentblogposts.action?key=ops" class="    "      title="浏览运维组空间的博文" >
+        博文
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-labels-link" href="/labels/listlabels-heatmap.action?key=ops" class="    "      title="浏览运维组空间的标签" >
+        标签
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-advanced-link" href="/spaces/viewspacesummary.action?key=ops" class="    "      title="浏览运维组空间的附加功能" >
+        空间操作
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+        </li>
+                    <li>
+            
+    
+            
+<a  id="create-page-button" href="#"  class="aui-button aui-style aui-button-primary aui-nav-imagelink"   title="创建内容">
+            <span>创建</span>
+    </a>
+        </li>
+        </ul>
+</div><div class="aui-header-secondary"><ul class="aui-nav">
+                <li>
+        
+    
+            
+<a  id="doctheme-anchor" href="#"  class=" aui-nav-imagelink"   title="">
+            <span></span>
+    </a>
+    </li>
+        <li>
+<form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="/dosearchsite.action" method="get">
+    <fieldset>
+                        <label for="quick-search-query" class="assistive">快速搜索</label>
+        <input id="quick-search-query" class="text app-search search quick-search-query" type="text"
+               accessKey="q" autocomplete="off" name="queryString" title="快速搜索"  placeholder="搜索" />
+        <input id="quick-search-submit" class="quick-search-submit" type="submit" value="搜索"/>
+
+        <div class="aui-dd-parent quick-nav-drop-down"></div>
+    </fieldset>
+    <div class="hidden parameters">
+                    <!-- putMetadata failed to add value for key "quick-nav-enabled" so rendering metadata inline - see server debug log for details -->
+        <meta name="ajs-quick-nav-enabled" content="true">
+                </div>
+</form>
+</li>
+    <li>    
+        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="help-menu-link-content" title="帮助">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">帮助</span>
+    </a>
+    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+    
+            
+<a  id="confluence-help-link" href="http://docs.atlassian.com/confluence/docs-54/Getting+Help+And+Support" class="    "      title="访问Confluence文档首页"  target="_blank"
+>
+        在线帮助
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="keyboard-shortcuts-link" href="#" class="    "      title="查看可用的键盘快捷方式" >
+        快捷键
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="feed-builder-link" href="/dashboard/configurerssfeed.action" class="    "      title="创建个性化的 RSS源。" >
+        RSS源建立器
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="whats-new-menu-link" href="http://docs.atlassian.com/confluence/docs-54/whatsnew/iframe?od=false&amp;a=false" class="    "      title="" >
+        新功能
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="gadget-directory-link" href="#" class="   user-item administration-link "      title="浏览小工具" >
+        可用的小工具
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="confluence-about-link" href="/aboutconfluencepage.action" class="    "      title="获取关于Confluence的更多信息" >
+        关于Confluence
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    </li>
+    <li>    
+    </li>
+                <li>
+        
+    
+            
+<a  id="notifications-anchor" href="#"  class="mw-anchor read aui-nav-imagelink"   title="">
+            <span></span>
+    </a>
+    </li>
+        <li>                                    
+        <a id="user-menu-link" class="aui-dropdown2-trigger " aria-haspopup="true" aria-owns="user-menu-link-content" data-username="houkl" href="#" title="侯凯龙">
+                    <div class="aui-avatar aui-avatar-small">
+                <div class="aui-avatar-inner">
+                    <img src="/s/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/_/images/icons/profilepics/default.png"/>
+                </div>
+            </div>
+            <span class="aui-icon-dropdown"></span>
+        </a>
+        <nav id="user-menu-link-content" class="aui-dropdown2 aui-style-default">
+                            <div class="aui-dropdown2-section">
+                    <ul  id="user-menu-link-user-status"                        class="aui-list-truncate section-user-status first">
+                                                    <li>
+    
+            
+<a  id="create-user-status-link" href="/display/~houkl" class="   user-item update-user-status "      title="更新你的状态" >
+        更新状态…
+</a>
+</li>
+                                            </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="user-menu-link-user-preferences"                        class="aui-list-truncate section-user-preferences">
+                                                    <li>
+    
+            
+<a  id="create-personal-space-link" href="/spaces/createpersonalspace.action" class="   user-item personal-space create-personal-space-link "      title="" >
+        添加个人空间…
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="view-user-history-link" href="/users/viewuserhistory.action" class="   user-item user-history popup-link "      title="" >
+        最近浏览
+</a>
+</li>
+                                            </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="user-menu-link-user-content"                        class="aui-list-truncate section-user-content">
+                                                    <li>
+    
+            
+<a  id="view-user-profile-link" href="/users/viewmyprofile.action" class="   user-item user-profile "      title="" >
+        用户信息
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="user-settings-link" href="/users/viewmysettings.action" class="   user-item "      title="" >
+        设置
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  href="/users/viewfollow.action?username=houkl" class="   follow-link "      title="" >
+        网络
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  href="/display/status/houkl/list" class="   user-item list-user-status "      title="" >
+        状态更新
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="user-favourites-link" href="/users/viewmyfavourites.action" class="   user-item "      title="" >
+        收藏
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="user-watches-link" href="/users/viewnotifications.action" class="   user-item "      title="" >
+        关注
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="user-drafts-link" href="/users/viewmydrafts.action" class="   user-item "      title="" >
+        草稿
+</a>
+</li>
+                                                    <li>
+    
+            
+<a  id="upm-requests-link" href="/plugins/servlet/upm/requests?source=header_user" class="    "      title="" >
+        Atlassian 应用程序商店
+</a>
+</li>
+                                            </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="user-menu-link-user-operations"                        class="aui-list-truncate section-user-operations">
+                                                    <li>
+    
+            
+<a  id="logout-link" href="/logout.action" class="   user-item logout-link "      title="" >
+        注销
+</a>
+</li>
+                                            </ul>
+                </div>
+                    </nav>
+                    </li>
+</ul>
+</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    <br class="clear">
+</header>
+
+    <div id="splitter">
+    <div id="splitter-sidebar" >
+        
+
+                    
+    
+
+
+<div class="plugin_pagetree">
+
+                        <div id="pagetreesearch">
+            <form method="POST" class="aui" action="/plugins/pagetreesearch/pagetreesearch.action" name="pagetreesearchform">
+                                    <input type="hidden" name="ancestorId" value="1966107">
+                                <input type="hidden" name="spaceKey" value="ops">
+                <input type="text"  class="text medium-field" size="20" name="queryString">
+                <input type="submit" class="aui-button" value="搜索">
+            </form>
+        </div>
+            
+        
+    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+        <div class="plugin_pagetree_children">
+        </div>
+    </ul>
+
+    <fieldset class="hidden">
+        <input type="hidden" name="treeId" value="">
+        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
+        <input type="hidden" name="treePageId" value="2523729">
+
+        <input type="hidden" name="noRoot" value="false">
+        <input type="hidden" name="rootPageId" value="1966107">
+
+        <input type="hidden" name="rootPage" value="">
+        <input type="hidden" name="startDepth" value="0">
+        <input type="hidden" name="spaceKey" value="ops" >
+
+        <input type="hidden" name="i18n-pagetree.loading" value="载入中...">
+        <input type="hidden" name="i18n-pagetree.error.permission" value="无法载入页面树。看来你没有权限查看根页面。">
+        <input type="hidden" name="i18n-pagetree.eeror.general" value="检索页面树时发生问题。有关详细信息，请检查服务器的日志文件。">
+        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FpageId%3D2523729">
+        <input type="hidden" name="mobile" value="false">
+
+                <fieldset class="hidden">
+                                                <input type="hidden" name="ancestorId" value="2523760">
+                                    <input type="hidden" name="ancestorId" value="1966107">
+                                    </fieldset>
+    </fieldset>
+</div>
+
+
+
+            </div>
+    <div id="splitter-content">
+
+                    <script type="text/javascript" src="/s/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/5.4.4/_/download/resources/com.atlassian.confluence.plugins.doctheme:resources/doc-theme.js"></script>
+    
+                        
+            
+<div id="main"  class="aui-page-panel" >
+    <div id="main-header">
+        
+        
+    <div id="navigation" class="content-navigation view">
+                    <ul class="ajs-menu-bar">
+                            <li class="ajs-button normal">
+
+    
+        
+                            
+    
+    
+    <a  id="editPageLink" href="/pages/editpage.action?pageId=2523729" rel="nofollow"  class="edit full-load"  accessKey="e"  title="编辑">
+                <span><u>E</u>编辑</span>    </a>
+</li>
+                <li class="ajs-button normal">
+
+    
+        
+                            
+    
+    
+    <a  id="watch-content-button" href="?watchingPage=true&amp;watchingSpace=false&amp;watchingBlogs=false&amp;isAdmin=false&amp;isBlogPost=false" rel="nofollow"  class="watch-menu not-watching"   title="关注(w)">
+                <span><u>W</u>关注</span>    </a>
+</li>
+                <li class="ajs-button normal">
+
+    
+            
+                            
+    
+    
+    <a  id="shareContentLink" href="#" rel="nofollow"  class="share"   title="通过发送email给其他人分享此内容">
+                <span><u>S</u>分享</span>    </a>
+</li>
+                        
+        <li class="normal ajs-menu-item">
+        <a id="add-menu-link" class="add hidden ajs-menu-title aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="add-menu" data-container="#navigation"><span><span>添加</span></span></a>         <div id="add-menu" class="aui-dropdown2 aui-style-default">
+                            <ul  id="add-menu-space"                     class="section-space first aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                            
+    
+    
+    <a  id="createPageLink" href="/pages/createpage.action?spaceKey=ops&amp;fromPageId=2523729" rel="nofollow"  class="add-page"  accessKey="p"  title="添加页面">
+                <span>页面</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="createPageLinkTemplate" href="/pages/createpage-choosetemplate.action?spaceKey=ops&amp;newSpaceKey=ops&amp;fromPageId=2523729" rel="nofollow"  class="add-page-template"  accessKey="p"  title="使用模板添加页面">
+                <span>由模板产生的页面</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="createBlogpostLink" href="/pages/createblogpost.action?spaceKey=ops" rel="nofollow"  class="add-news"   title="新增博客文章">
+                <span>博文</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  href="/plugins/drawio/addDiagram.action?pageId=2523729" rel="nofollow"  class=""   title="">
+                    <img alt="Draw.io diagram" src="/download/resources/com.mxgraph.confluence.plugins.diagramly:drawio-editor/images/logo-16x16.png" height="16" width="16" title="Draw.io diagram">
+                <span>Draw.io diagram</span>    </a>
+</li>
+                                </ul>
+                            <ul  id="add-menu-page"                     class="section-page aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                            
+    
+    
+    <a  id="add-comment-menu-link" href="/pages/viewpage.action?pageId=2523729&amp;showComments=true&amp;showCommentArea=true#addcomment" rel="nofollow"  class="add-comment"   title="添加评论">
+                <span>评论</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="add-attachment-link" href="/pages/viewpageattachments.action?pageId=2523729" rel="nofollow"  class="add-attachment"  accessKey="t"  title="添加附件">
+                <span>附件</span>    </a>
+</li>
+                                </ul>
+                    </div>
+    </li>
+                    
+        <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action ajs-menu-title aui-dropdown2-trigger" href="#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation"><span><span>工具</span></span></a>         <div id="action-menu" class="aui-dropdown2 aui-style-default">
+                            <ul  id="action-menu-primary"                     class="section-primary first aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                            
+    
+    
+    <a  id="view-attachments-link" href="/pages/viewpageattachments.action?pageId=2523729" rel="nofollow"  class="action-view-attachments"  accessKey="t"  title="查看附件">
+                <span><u>t</u>附件(0)</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-view-history-link" href="/pages/viewpreviousversions.action?pageId=2523729" rel="nofollow"  class="action-view-history"   title="">
+                <span>页面历史</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-page-permissions-link" href="/pages/viewinfo.action?pageId=2523729" rel="nofollow"  class="action-page-permissions"   title="编辑限制">
+                <span>限制</span>    </a>
+</li>
+                                </ul>
+                            <ul  id="action-menu-marker"                     class="section-marker aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                            
+    
+    
+    <a  id="page-favourite" href="/labels/addfavourite.action?entityId=2523729&amp;atl_token=5b810b640f44edad2a221e6dea79bd8cba1ba9c3" rel="nofollow"  class="action-page-favourite"   title="">
+                <span>收藏夹</span>    </a>
+</li>
+                                </ul>
+                            <ul  id="action-menu-secondary"                     class="section-secondary aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                            
+    
+    
+    <a  id="view-page-info-link" href="/pages/viewinfo.action?pageId=2523729" rel="nofollow"  class="action-view-info"   title="">
+                <span>页面信息</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="link-to-page-link" href="/pages/viewinfo.action?pageId=2523729" rel="nofollow"  class=""   title="链接至本页面">
+                <span>链接到此页…</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="view-in-hierarchy-link" href="/pages/listpages-dirview.action?key=ops&amp;openId=2523729#selectedPageInHierarchy" rel="nofollow"  class=""   title="">
+                <span>以层级方式查看</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-view-source-link" href="/plugins/viewsource/viewpagesrc.action?pageId=2523729" rel="nofollow"  class="action-view-source popup-link"   title="">
+                <span>查看页面源代码</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="org.randombits.confluence.metadata.viewmetadata" href="/pages/metadata/viewxml.action?pageId=2523729" rel="nofollow"  class=""   title="">
+                <span>View Scaffolding XML</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-export-pdf-link" href="/spaces/flyingpdf/pdfpageexport.action?pageId=2523729" rel="nofollow"  class=""   title="">
+                <span>导出为PDF</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-export-word-link" href="/exportword?pageId=2523729" rel="nofollow"  class="action-export-word"   title="">
+                <span>导出为Word</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="import-word-doc" href="/pages/worddav/uploadimport.action?pageId=2523729" rel="nofollow"  class=""   title="">
+                <span>Doc文件导入</span>    </a>
+</li>
+                                </ul>
+                            <ul  id="action-menu-modify"                     class="section-modify aui-dropdown2-section">
+                                            <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-copy-page-link" href="/pages/copypage.action?idOfPageToCopy=2523729&amp;spaceKey=ops" rel="nofollow"  class="action-copy"   title="">
+                <span>复制</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="copy-scaffold-contents-link" href="/pages/copyscaffoldfromajax.action?pageId=2523729" rel="nofollow"  class=""   title="">
+                <span>Copy with Scaffolding XML</span>    </a>
+</li>
+                                        <li>
+
+    
+        
+                            
+    
+    
+    <a  id="action-move-page-dialog-link" href="/pages/viewpage.action?pageId=2523729" rel="nofollow"  class="action-move"   title="">
+                <span>移动</span>    </a>
+</li>
+                                </ul>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+        
+                <div id="title-heading" class="pagetitle with-breadcrumbs">
+        
+                            <div class="space-logo " data-key="ops" data-name="运维组" data-entity-type="confluence.space">
+            <a><img class="logo global" src="/images/logo/default-space-logo-48.png" alt=""></a>
+        </div>            
+                            <div id="breadcrumb-section">
+                    
+    
+    
+    <ol id="breadcrumbs">
+                    
+                
+        <li class="first" >
+                
+
+                    <span class=""><a href="/display/ops">运维组</a></span>
+                            
+                
+        <li>
+                
+
+                    <span class=""><a href="/pages/viewpage.action?pageId=1966107">运维组</a></span>
+                            
+                
+        <li>
+                
+
+                    <span class=""><a href="/pages/viewpage.action?pageId=2523760">资产信息类文档</a></span>
+                </ol>
+
+
+                </div>
+            
+            <h1 id="title-text" class="with-breadcrumbs">
+                                        <a href="/pages/viewpage.action?pageId=2523729">硬件资产管理</a>
+                            </h1>
+        </div>
+    </div>
+
+    
+
+    
+    
+    
+    
+    
+
+        
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+<div id="content" class="page view">
+    
+
+<div id="action-messages">
+                        </div>
+
+
+
+        <script type="text/x-template" title="searchResultsGrid">
+    <table class="aui">
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">页面标题</th>
+                <th class="search-result-space">空间</th>
+                <th class="search-result-date">更新于</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <td class="search-result-title"><a href="{1}" class="content-type-{2}"><span>{0}</span></a></td>
+        <td class="search-result-space"><a class="space" href="/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>
+        
+    
+    
+        <fieldset class="hidden parameters">
+            <input type="hidden" title="parentPageId" value="2523760">
+        </fieldset>
+
+                            
+    
+
+                    
+
+        
+        <a href="#page-metadata-end" class="assistive">转至元数据结尾</a>
+<div id="page-metadata-start" class="assistive"></div>
+
+    <div class="page-metadata">
+        <ul>
+                            <li class="page-metadata-item noprint">
+
+    
+            
+                            
+    
+    
+    <a  id="content-metadata-page-restrictions" href="#" rel="nofollow"  class=""   title="Restrictions apply">
+                    <img alt="" src="/download/resources/com.atlassian.confluence.plugins.confluence-page-banner:page-banner-resources/images/red_padlock.png" height="16" width="16" title="">
+                <span></span>    </a>
+</li>
+                        <li class="page-metadata-modification-info">
+                
+        
+    
+        
+    
+        
+        
+            创建： <span class='author'>     <span class="unknown-user">未知用户 (wanxm)</span></span>，最新修改： <span class='editor'>     <a href="    /display/~houkl
+"
+                       class="url fn confluence-userlink" data-username="houkl"
+                            >侯凯龙</a></span> 于 <a class='last-modified' title='八月 31, 2015 19:17' href='/pages/diffpagesbyversion.action?pageId=2523729&amp;selectedPageVersions=32&amp;selectedPageVersions=33'>八月 31, 2015</a>
+                </li>
+        </ul>
+    </div>
+
+
+<a href="#page-metadata-start" class="assistive">转至元数据起始</a>
+<div id="page-metadata-end" class="assistive"></div>
+
+        
+        <fieldset class="hidden parameters">
+                        <input type="hidden" title="browsePageTreeMode" value="view">
+        </fieldset>
+
+        <div class="wiki-content">
+                           
+        <p><span>10.19.0.230-254 为 vip 预留ip，请知悉！</span></p><div class="table-wrap"><table class="confluenceTable"><colgroup><col /> <col /> <col /> <col /> </colgroup><tbody><tr><td class="confluenceTd">设备类型</td><td class="confluenceTd">品牌</td><td colspan="1" class="confluenceTd"><span>机柜/宿主机</span></td><td class="confluenceTd">型号</td><td class="confluenceTd">硬件配置</td><td class="confluenceTd">系统</td><td class="confluenceTd">ip</td><td class="confluenceTd">主机名</td><td class="confluenceTd">宿主机</td><td class="confluenceTd">用途</td><td class="confluenceTd">资产编号</td><td class="confluenceTd">购买日期</td><td class="confluenceTd">保修期限</td><td class="confluenceTd">合同号</td><td class="confluenceTd">运营商信息</td><td class="confluenceTd">备注</td></tr><tr><td rowspan="32" class="confluenceTd">物理机</td><td rowspan="26" class="confluenceTd">DELL</td><td rowspan="2" class="confluenceTd"><span>B-09-11</span></td><td rowspan="26" class="confluenceTd">R630</td><td rowspan="2" class="confluenceTd">cpu：E5-2640*2</td><td rowspan="26" class="confluenceTd">suse</td><td class="confluenceTd">10.19.0.20/24</td><td rowspan="2" class="confluenceTd">wjsa-sys01</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">管理类服务器</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.0.20/16</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-12</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.0.21/24</td><td rowspan="2" class="confluenceTd">wjsa-sys02</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">管理类服务器</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.0.21/16</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-11</span></td><td rowspan="2" class="confluenceTd">mem：4*16</td><td class="confluenceTd">10.19.2.21/24</td><td rowspan="2" class="confluenceTd">wjsa-app01</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">应用类服务器</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.2.21/16</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-12</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.2.22/24</td><td rowspan="2" class="confluenceTd">wjsa-app02</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">应用类服务器</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.2.22/16</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-13</span></td><td rowspan="2" class="confluenceTd">disk：2*300-15k、6*600-10k</td><td class="confluenceTd">10.19.2.23/24</td><td rowspan="2" class="confluenceTd">wjsa-app03</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">应用类服务器</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.2.23/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-11</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.2.24/24</td><td rowspan="2" class="confluenceTd">wjsa-app04</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">应用类服务器</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.2.24/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-12</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.2.25/24</td><td rowspan="2" class="confluenceTd">wjsa-app05</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">应用类服务器</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.2.25/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-13</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.2.26/24</td><td rowspan="2" class="confluenceTd">wjsa-app06</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">应用类服务器</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.2.26/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-11</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.1.21/24</td><td rowspan="2" class="confluenceTd">wjsa-base01</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">基础服务</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.1.21/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-12</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.1.22/24</td><td rowspan="2" class="confluenceTd">wjsa-base02</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">基础服务</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.1.22/24</td></tr><tr><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.1.23/24</td><td rowspan="2" class="confluenceTd">wjsa-base03</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">基础服务</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.1.23/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-11</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.2.27/24</td><td rowspan="2" class="confluenceTd">wjsa-o2o01</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">o2o产品独立服务</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.2.27/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-12</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.2.28/24</td><td rowspan="2" class="confluenceTd">wjsa-o2o02</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">o2o产品独立服务</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.2.28/24</td></tr><tr><td rowspan="6" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"><span>B-09-11</span></td><td rowspan="6" class="confluenceTd">R730</td><td class="confluenceTd">cpu：E5-2640*2</td><td rowspan="6" class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.3.20/24</td><td rowspan="2" class="confluenceTd">wjdb-mdb01</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">数据库主</td><td class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">mem：8*16</td><td class="confluenceTd">172.19.3.20/24</td><td class="confluenceTd"> </td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-12</span></td><td rowspan="2" class="confluenceTd">disk：10*1.2T-10k</td><td class="confluenceTd">10.19.3.21/24</td><td rowspan="2" class="confluenceTd">wjdb-mdb02</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">数据库备</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.3.21/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-13</span></td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.3.22/24</td><td rowspan="2" class="confluenceTd">wjdb-mdb03</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd">数据库备</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.3.22/24</td></tr><tr><td rowspan="16" class="confluenceTd">物理机</td><td rowspan="16" class="confluenceTd">DELL</td><td rowspan="2" class="confluenceTd"><span>B-09-14</span></td><td rowspan="16" class="confluenceTd">R730 xd</td><td rowspan="2" class="confluenceTd">cpu：E5-2640*2</td><td rowspan="2" class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.16.30/24</td><td rowspan="2" class="confluenceTd">wjsa-tsl01</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="16" class="confluenceTd">大数据服务器，datenode节点</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.16.30/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-14</span></td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.16.31/24</td><td rowspan="2" class="confluenceTd">wjsa-tsl02</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.16.31/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-14</span></td><td rowspan="2" class="confluenceTd">mem：8*16</td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.16.32/24</td><td rowspan="2" class="confluenceTd">wjsa-tsl03</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.16.32/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-14</span></td><td rowspan="2" class="confluenceTd">disk：2*300-15k、12*4T-7.2k</td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.16.33/24</td><td rowspan="2" class="confluenceTd">wjsa-tsl04</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.16.33/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-14</span></td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.16.34/24</td><td rowspan="2" class="confluenceTd">wjsa-tsl05</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.16.34/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-14</span></td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.16.35/24</td><td rowspan="2" class="confluenceTd">wjsa-tsl06</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.16.35/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-14</span></td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.16.36/24</td><td rowspan="2" class="confluenceTd">wjsa-tsl07</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.16.36/24</td></tr><tr><td rowspan="2" class="confluenceTd"><span>B-09-14</span></td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td class="confluenceTd">10.19.16.37/24</td><td rowspan="2" class="confluenceTd">wjsa-tsl08</td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">172.19.16.37/24</td></tr><tr><td rowspan="10" class="confluenceTd">物理机</td><td rowspan="6" class="confluenceTd">DELL</td><td colspan="1" class="confluenceTd"> </td><td rowspan="10" class="confluenceTd">R630</td><td class="confluenceTd">cpu：E5-2640*2</td><td rowspan="10" class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.16.20/24</td><td rowspan="3" class="confluenceTd">wjsa-tsl01</td><td rowspan="3" class="confluenceTd"> </td><td rowspan="6" class="confluenceTd">大数据的master节点</td><td class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td></tr><tr><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td></tr><tr><td class="confluenceTd"> </td><td class="confluenceTd">mem：4*16</td><td class="confluenceTd">172.19.16.20/24</td><td class="confluenceTd"> </td></tr><tr><td class="confluenceTd"> </td><td rowspan="3" class="confluenceTd">disk：2*600G-10k</td><td class="confluenceTd">10.19.16.21/24</td><td rowspan="3" class="confluenceTd">wjsa-tsl02</td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td></tr><tr><td class="confluenceTd"> </td><td class="confluenceTd"> </td></tr><tr><td class="confluenceTd"> </td><td class="confluenceTd">172.19.16.21/24</td></tr><tr><td rowspan="4" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">cpu：E5-2640*2</td><td class="confluenceTd">10.19.16.22/24</td><td rowspan="4" class="confluenceTd">wjsa-tsl03</td><td rowspan="4" class="confluenceTd"> </td><td rowspan="4" class="confluenceTd">大数据的master节点，同时放日志</td><td class="confluenceTd"> </td><td rowspan="4" class="confluenceTd"> </td><td rowspan="4" class="confluenceTd"> </td><td rowspan="4" class="confluenceTd"> </td><td rowspan="4" class="confluenceTd"> </td><td rowspan="4" class="confluenceTd"> </td></tr><tr><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td></tr><tr><td class="confluenceTd"> </td><td class="confluenceTd">mem：4*16</td><td class="confluenceTd">172.19.16.22/24</td><td class="confluenceTd"> </td></tr><tr><td class="confluenceTd"> </td><td class="confluenceTd">disk：2*600G-10k、4*1T-7.2k</td><td class="confluenceTd"> </td><td class="confluenceTd"> </td></tr><tr><td rowspan="3" class="confluenceTd">物理机</td><td rowspan="3" class="confluenceTd">DELL</td><td rowspan="3" class="confluenceTd"><span>B-09-13</span></td><td rowspan="3" class="confluenceTd"> </td><td class="confluenceTd">cpu：E5-2640*2</td><td rowspan="3" class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.29/24</td><td rowspan="3" class="confluenceTd">wjsa-log01</td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd">日志服务器</td><td class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"> </td></tr><tr><td class="confluenceTd">mem：4*8</td><td class="confluenceTd">172.19.2.29/24</td><td class="confluenceTd"> </td></tr><tr><td class="confluenceTd">disk：2*300G-15k、4*2T-7.2k</td><td class="confluenceTd"> </td><td class="confluenceTd"> </td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.30/24</td><td class="confluenceTd">wjsa-ntp01</td><td class="confluenceTd">无</td><td class="confluenceTd">时间服务器</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.31/24</td><td class="confluenceTd">wjsa-ntp02</td><td class="confluenceTd">无</td><td class="confluenceTd">时间服务器</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">4C-8G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.32/24</td><td class="confluenceTd">wjsa-lvs01</td><td class="confluenceTd">无</td><td class="confluenceTd">四层负责均衡</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">4C-8G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.33/24</td><td class="confluenceTd">wjsa-lvs02</td><td class="confluenceTd">无</td><td class="confluenceTd">四层负责均衡</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.34/24</td><td class="confluenceTd">wjsa-tng01</td><td class="confluenceTd">无</td><td class="confluenceTd">内测-七层负责均衡</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">4C-8G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.35/24</td><td class="confluenceTd">wjsa-tng02</td><td class="confluenceTd">无</td><td class="confluenceTd">生产-七层负责均衡</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">4C-8G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.36/24</td><td class="confluenceTd">wjsa-tng03</td><td class="confluenceTd">无</td><td class="confluenceTd">生产-七层负责均衡</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">4c-8G-100G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.37/24</td><td class="confluenceTd">wjsa-jk01</td><td class="confluenceTd">无</td><td class="confluenceTd">监控</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">4c-8G-100G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.38/24</td><td class="confluenceTd">wjsa-jk02</td><td class="confluenceTd">无</td><td class="confluenceTd">监控</td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.39/24</td><td class="confluenceTd">wjsa-dns01</td><td class="confluenceTd">无</td><td class="confluenceTd">内侧dns</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.40/24</td><td class="confluenceTd">wjsa-dns02</td><td class="confluenceTd">无</td><td class="confluenceTd">生产dns</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.41/24</td><td class="confluenceTd">wjsa-dns03</td><td class="confluenceTd">无</td><td class="confluenceTd">生产dns</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.42/24</td><td class="confluenceTd">wjsa-sa01</td><td class="confluenceTd">无</td><td class="confluenceTd">运维管理机</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.43/24</td><td class="confluenceTd">wjsa-sa02</td><td class="confluenceTd">无</td><td class="confluenceTd">运维管理机</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-sys02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.0.44/24</td><td class="confluenceTd">wjsa-bak01</td><td class="confluenceTd">无</td><td class="confluenceTd">内测dns、nginx的备份机</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">4c-16G-430G</td><td colspan="1" class="confluenceTd">centos6.6</td><td colspan="1" class="confluenceTd">10.19.0.45</td><td colspan="1" class="confluenceTd">wjdb-dbtest</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">内测数据库</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.51/24</td><td class="confluenceTd">wjsa-mos01</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝后台</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.93/24</td><td class="confluenceTd">wjsa-hdb03</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝主站</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.62/24</td><td class="confluenceTd">wjsa-m02</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝手机端</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.73/24</td><td class="confluenceTd">wjsa-bo01</td><td class="confluenceTd">无</td><td class="confluenceTd">邯郸E步-oms</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.103/24</td><td class="confluenceTd">wjsa-hd03</td><td class="confluenceTd">无</td><td class="confluenceTd">邯郸银行</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.82/24</td><td class="confluenceTd">wjsa-jo02</td><td class="confluenceTd">无</td><td class="confluenceTd">金斗云-EOMS</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.182/24</td><td class="confluenceTd">wjsa-hb02</td><td class="confluenceTd">无</td><td class="confluenceTd">红包api</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.52/24</td><td class="confluenceTd">wjsa-mos02</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝后台</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.91/24</td><td class="confluenceTd">wjsa-hdb01</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝主站</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.63/2</td><td class="confluenceTd">wjsa-m03</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝手机端</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.73/24</td><td class="confluenceTd">wjsa-bo02</td><td class="confluenceTd">无</td><td class="confluenceTd">邯郸E步-oms</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.101/24</td><td class="confluenceTd">wjsa-hd01</td><td class="confluenceTd">无</td><td class="confluenceTd">邯郸银行</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.83/24</td><td class="confluenceTd">wjsa-jo03</td><td class="confluenceTd">无</td><td class="confluenceTd">金斗云-EOMS</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.181/24</td><td class="confluenceTd">wjsa-hb01</td><td class="confluenceTd">无</td><td class="confluenceTd">红包api</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.53/24</td><td class="confluenceTd">wjsa-mos03</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝后台</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.92/24</td><td class="confluenceTd">wjsa-hdb02</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝主站</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.61/24</td><td class="confluenceTd">wjsa-m01</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝手机端</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.74/24</td><td class="confluenceTd">wjsa-bo03</td><td class="confluenceTd">无</td><td class="confluenceTd">邯郸E步-oms</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.102/24</td><td class="confluenceTd">wjsa-hd02</td><td class="confluenceTd">无</td><td class="confluenceTd">邯郸银行</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.81/24</td><td class="confluenceTd">wjsa-jo01</td><td class="confluenceTd">无</td><td class="confluenceTd">金斗云-EOMS</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.183/24</td><td class="confluenceTd">wjsa-hb03</td><td class="confluenceTd">无</td><td class="confluenceTd">红包api</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.111/24</td><td class="confluenceTd">wjsa-jdy01</td><td class="confluenceTd">无</td><td class="confluenceTd">金斗云</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.173/24</td><td class="confluenceTd">wjsa-bbs03</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝dubbo</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.122/24</td><td class="confluenceTd">wjsa-bku02</td><td class="confluenceTd">无</td><td class="confluenceTd">UserService</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.131/24</td><td class="confluenceTd">wjsa-bkb01</td><td class="confluenceTd">无</td><td class="confluenceTd">BankServer</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.153/24</td><td class="confluenceTd">wjsa-bkp03</td><td class="confluenceTd">无</td><td class="confluenceTd">PassPort</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.142/24</td><td class="confluenceTd">wjsa-rxb02</td><td class="confluenceTd">无</td><td class="confluenceTd">日息宝</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.161/24</td><td class="confluenceTd">wjsa-bkm01</td><td class="confluenceTd">无</td><td class="confluenceTd">银行平台-EOMS</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.112/24</td><td class="confluenceTd">wjsa-jdy02</td><td class="confluenceTd">无</td><td class="confluenceTd">金斗云</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.171/24</td><td class="confluenceTd">wjsa-hdubbo01</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝dubbo</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.156/24</td><td class="confluenceTd">wjsa-bku03</td><td class="confluenceTd">无</td><td class="confluenceTd">UserService</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.158/24</td><td class="confluenceTd">wjsa-bkb02</td><td class="confluenceTd">无</td><td class="confluenceTd">BankServer</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.151/24</td><td class="confluenceTd">wjsa-bkp01</td><td class="confluenceTd">无</td><td class="confluenceTd">PassPort</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.143/24</td><td class="confluenceTd">wjsa-rxb03</td><td class="confluenceTd">无</td><td class="confluenceTd">日息宝</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-200G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.148/24</td><td class="confluenceTd">wjsa-wlg01</td><td class="confluenceTd">无</td><td class="confluenceTd">大数据</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.162/24</td><td class="confluenceTd">wjsa-bkm02</td><td class="confluenceTd">无</td><td class="confluenceTd">银行平台-EOMS</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.113/24</td><td class="confluenceTd">wjsa-jdy03</td><td class="confluenceTd">无</td><td class="confluenceTd">金斗云</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-200G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.149/24</td><td class="confluenceTd">wjsa-wlg02</td><td class="confluenceTd"> </td><td class="confluenceTd">大数据</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.172/24</td><td class="confluenceTd">wjsa-hdubbo02</td><td class="confluenceTd">无</td><td class="confluenceTd">好贷宝dubbo</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.121/24</td><td class="confluenceTd">wjsa-bku01</td><td class="confluenceTd">无</td><td class="confluenceTd">UserService</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.133/24</td><td class="confluenceTd">wjsa-bkb03</td><td class="confluenceTd">无</td><td class="confluenceTd">BankServer</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.152/24</td><td class="confluenceTd">wjsa-bkp02</td><td class="confluenceTd">无</td><td class="confluenceTd">PassPort</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">1C-2G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.141/24</td><td class="confluenceTd">wjsa-rxb01</td><td class="confluenceTd">无</td><td class="confluenceTd">日息宝</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.163/24</td><td class="confluenceTd">wjsa-bkm03</td><td class="confluenceTd">无</td><td class="confluenceTd">银行平台-EOMS</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">1c-2g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.191</td><td class="confluenceTd">wjsa-paybiz01</td><td class="confluenceTd">无</td><td class="confluenceTd">业务前置（BIZ）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.192</td><td class="confluenceTd">wjsa-paybiz02</td><td class="confluenceTd">无</td><td class="confluenceTd">业务前置（BIZ）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.193</td><td class="confluenceTd">wjsa-paybiz03</td><td class="confluenceTd">无</td><td class="confluenceTd">业务前置（BIZ）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.194</td><td class="confluenceTd">wjsa-paybiz04</td><td class="confluenceTd">无</td><td class="confluenceTd">业务前置（BIZ）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.195</td><td class="confluenceTd">wjsa-paybiz05</td><td class="confluenceTd">无</td><td class="confluenceTd">业务前置（BIZ）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">1c-2g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.196</td><td class="confluenceTd">wjsa-paybank01</td><td class="confluenceTd">无</td><td class="confluenceTd">银行渠道（BANK）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.197</td><td class="confluenceTd">wjsa-paybank02</td><td class="confluenceTd">无</td><td class="confluenceTd">银行渠道（BANK）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.198</td><td class="confluenceTd">wjsa-paybank03</td><td class="confluenceTd">无</td><td class="confluenceTd">银行渠道（BANK）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.199</td><td class="confluenceTd">wjsa-paybank04</td><td class="confluenceTd">无</td><td class="confluenceTd">银行渠道（BANK）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.210</td><td class="confluenceTd">wjsa-paybank05</td><td class="confluenceTd">无</td><td class="confluenceTd">银行渠道（BANK）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">1c-2g-100G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.211</td><td class="confluenceTd">wjsa-settle01</td><td class="confluenceTd">无</td><td class="confluenceTd">结算对账（SETTLE）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-100G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.212</td><td class="confluenceTd">wjsa-settle02</td><td class="confluenceTd">无</td><td class="confluenceTd">结算对账（SETTLE）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.213</td><td class="confluenceTd">wjsa-settle03</td><td class="confluenceTd">无</td><td class="confluenceTd">结算对账（SETTLE）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">1c-2g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.214</td><td class="confluenceTd">wjsa-payppms01</td><td class="confluenceTd">无</td><td class="confluenceTd">支付平台管理系统（PPMS）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.215</td><td class="confluenceTd">wjsa-payppms02</td><td class="confluenceTd">无</td><td class="confluenceTd">支付平台管理系统（PPMS）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.216</td><td class="confluenceTd">wjsa-payppms03</td><td class="confluenceTd">无</td><td class="confluenceTd">支付平台管理系统（PPMS）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">1c-2g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.217</td><td class="confluenceTd">wjsa-payauth01</td><td class="confluenceTd">无</td><td class="confluenceTd">认证中心（AUTH）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.218</td><td class="confluenceTd">wjsa-payauth02</td><td class="confluenceTd">无</td><td class="confluenceTd">认证中心（AUTH）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.219</td><td class="confluenceTd">wjsa-payauth03</td><td class="confluenceTd">无</td><td class="confluenceTd">认证中心（AUTH）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.220</td><td class="confluenceTd">wjsa-payauth04</td><td class="confluenceTd">无</td><td class="confluenceTd">认证中心（AUTH）</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2c-4g-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.221</td><td class="confluenceTd">wjsa-payauth05</td><td class="confluenceTd">无</td><td class="confluenceTd">商户中心</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td class="confluenceTd">虚拟机</td><td class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">2C-4G-30G</td><td class="confluenceTd">centos6.6</td><td class="confluenceTd">10.19.2.143/24</td><td class="confluenceTd">wjsa-bko03</td><td class="confluenceTd">无</td><td class="confluenceTd">南昌银行</td><td class="confluenceTd"> </td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td><td class="confluenceTd">无</td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.230/24</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test01</span></td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">测试组-灰度测试机</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.201/24</span></td><td colspan="1" class="confluenceTd"><span>wjsa-hg201</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd">合规项目</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>无</span></td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">1C-2G-30G</td><td colspan="1" class="confluenceTd">centos6.6</td><td colspan="1" class="confluenceTd">10.19.2.66/24</td><td colspan="1" class="confluenceTd">wjsa-ywtest01</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">yw测试</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd">无</td></tr><tr><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">物理机</td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>10.19.1.21</span></td><td colspan="1" class="confluenceTd"><span>wjsa-base01</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>NFS（主）</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>物理机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>10.19.1.22</span></td><td colspan="1" class="confluenceTd"><span>wjsa-base02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>NFS（备）</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>物理机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>10.19.1.22</span></td><td colspan="1" class="confluenceTd"><span>wjsa-base02</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="5" class="confluenceTd"><span>rabbitMQ</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>物理机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>10.19.1.23</span></td><td colspan="1" class="confluenceTd"><span>wjsa-base03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.30</span></td><td colspan="1" class="confluenceTd"><span>wjsa-mq03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.31</span></td><td colspan="1" class="confluenceTd"><span>wjsa-mq04</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.70</span></td><td colspan="1" class="confluenceTd"><span>wjsa-mq05</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">物理机</td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>10.19.1.21</span></td><td colspan="1" class="confluenceTd"><span>wjsa-base01</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">redis（备）</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.32</span></td><td colspan="1" class="confluenceTd"><span>wjsa-rds01</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">redis（主）</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.71</span></td><td colspan="1" class="confluenceTd"><span>wjsa-rds02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">redis（预发布）</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.33</span></td><td colspan="1" class="confluenceTd"><span>wjsa-zk01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="5" class="confluenceTd"><span>zookeeper</span><br /><span> </span><span> </span><span> </span><span> </span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">虚机机</td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.34</span></td><td colspan="1" class="confluenceTd"><span>wjsa-zk02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.35</span></td><td colspan="1" class="confluenceTd"><span>wjsa-zk03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.36</span></td><td colspan="1" class="confluenceTd"><span>wjsa-zk04</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.37</span></td><td colspan="1" class="confluenceTd"><span>wjsa-zk05</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.72</span></td><td colspan="1" class="confluenceTd"><span>wjsa-zk06</span></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd"><span>zookeeper（预发布）</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.38</span></td><td colspan="1" class="confluenceTd"><span>wjsa-cache01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"><span>缓存服务</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.39</span></td><td colspan="1" class="confluenceTd"><span>wjsa-cache02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.40</span></td><td colspan="1" class="confluenceTd"><span>wjsa-cache03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.41</span></td><td colspan="1" class="confluenceTd"><span>wjsa-sms01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"><span>短信服务</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.42</span></td><td colspan="1" class="confluenceTd"><span>wjsa-sms02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.43</span></td><td colspan="1" class="confluenceTd"><span>wjsa-sso01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"><span>SSO服务</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.44</span></td><td colspan="1" class="confluenceTd"><span>wjsa-sso02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.45</span></td><td colspan="1" class="confluenceTd"><span>wjsa-sso03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.46</span></td><td colspan="1" class="confluenceTd"><span>wjsa-bkg01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"><span>后台权限服务</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.47</span></td><td colspan="1" class="confluenceTd"><span>wjsa-bkg02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.48</span></td><td colspan="1" class="confluenceTd"><span>wjsa-mem01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"><span>会员服务</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.49</span></td><td colspan="1" class="confluenceTd"><span>wjsa-mem02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.50</span></td><td colspan="1" class="confluenceTd"><span>wjsa-mem03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.54</span></td><td colspan="1" class="confluenceTd"><span>wjsa-acc01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"><span>账户服务</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.55</span></td><td colspan="1" class="confluenceTd"><span>wjsa-acc02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.56</span></td><td colspan="1" class="confluenceTd"><span>wjsa-acc03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.57</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qbweb01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"><span>钱包web</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app04</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.58</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qbweb02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.59</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qbweb03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app05</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.60</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qbapi01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="3" class="confluenceTd"><span>钱包API</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.61</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qbapi02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.62</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qbapi03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app06</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.64</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qbbkg01</span></td><td colspan="1" class="confluenceTd"> </td><td rowspan="2" class="confluenceTd"><span>钱包后台管理</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-app03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>2C-4G-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.65</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qbbkg02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.94</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qstrade01</span></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd"><span>钱包生活-trade</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.95</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qstrade02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.96</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qstrade03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.97</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsmember01</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>钱包生活-member</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.98</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsmember02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.99</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsmember03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.104</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsmanager01</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>钱包生活-manager</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.105</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsmanager02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.106</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsmanager03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.74</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsmerchant01</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>钱包生活-merchant</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.75</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsmerchant02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.76</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsmerchant03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.77</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsaccount01</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>钱包生活-account</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.78</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsaccount02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.79</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsaccount03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.84</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsfile01</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>钱包生活-file</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.85</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsfile02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.86</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsfile03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.87</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsweixin01</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>钱包生活-weixin</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.88</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsweixin02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚机机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-o2o01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.89</span></td><td colspan="1" class="confluenceTd"><span>wjsa-qsweixin03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>未部署</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd">虚拟机</td><td colspan="1" class="confluenceTd">xen</td><td colspan="1" class="confluenceTd"><span>wjsa-apps01</span></td><td colspan="1" class="confluenceTd">无</td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd">10.19.2.125</td><td colspan="1" class="confluenceTd">wjsa-test_apps01 </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">基础环境已经搭建完成</td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps01</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.126</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps02</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.127</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps03</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps02</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.128</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps04</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.129</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps05</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps03</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.134</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps06</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps04</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.135</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps07</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps04</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.136</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps08</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps05</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.123</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps09</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps05</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.124</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps10</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps06</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.137</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps11</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr><tr><td colspan="1" class="confluenceTd"><span>虚拟机</span></td><td colspan="1" class="confluenceTd"><span>xen</span></td><td colspan="1" class="confluenceTd"><span>wjsa-apps06</span></td><td colspan="1" class="confluenceTd"><span>无</span></td><td colspan="1" class="confluenceTd"><span>1c-2g-30G</span></td><td colspan="1" class="confluenceTd"><span>centos6.6</span></td><td colspan="1" class="confluenceTd"><span>10.19.2.138</span></td><td colspan="1" class="confluenceTd"><span>wjsa-test_apps12</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><span>基础环境已经搭建完成</span></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td></tr></tbody></table></div><p> </p><p> </p>
+
+                
+        
+    
+        </div>
+
+        <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="http://wiki.haodaibao.com/pages/viewpage.action?pageId=2523729"
+    dc:identifier="http://wiki.haodaibao.com/pages/viewpage.action?pageId=2523729"
+    dc:title="硬件资产管理"
+    trackback:ping="http://wiki.haodaibao.com/rpc/trackback/2523729"/>
+</rdf:RDF>
+-->
+
+            
+    
+
+
+
+<div id="labels-section" class="pageSection group">
+    <div class="labels-section-content content-column" entityid="2523729" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list label-list-right  has-pen">
+            <li class="no-labels-message">
+            无标签
+        </li>
+                <li class="labels-edit-container">
+            <a href="#" class="show-labels-editor editor-icon" title="编辑标签">
+                <span class="icon icon-edit">编辑标签</span>
+            </a>
+        </li>
+        </ul>
+
+    </div>
+</div></div>
+
+            
+            
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+
+                    
+    
+<div id="comments-section" class="pageSection group">
+    
+    
+    
+    
+            <div class="bottom-comment-panels comment-panels">
+                                    
+    
+
+                    
+    
+
+
+    
+
+<div class="quick-comment-container comment add"><p class="comment-user-logo"><a class="userLogoLink" data-username="houkl" href="/users/editmyprofilepicture.action" title="添加头像"><img class="userLogo logo defaultLogo" src="/s/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/_/images/icons/profilepics/add_profile_pic.png" alt="用户图标: 添加头像"></a></p><div class="quick-comment-vertical-spacer"></div><div class="quick-comment-body"><div class="quick-comment-loading-container" style="display:none;"><p class="quick-comment-loading-message">正在加载编辑器</p></div><div id="editor-messages"></div><div id="all-messages"></div><form style="display:block;" class="quick-comment-form aui" method="post" name="inlinecommentform" action="/pages/doaddcomment.action?pageId=2523729" ><div title="添加评论" class="quick-comment-prompt"><span>编写评论...</span></div></form></div></div>
+
+    
+            </div>
+    
+                        <div id="comments-actions" class="aui-toolbar noprint">
+                <p class="toolbar-group">
+                    <span class="toolbar-item"><a href="/pages/viewpage.action?pageId=2523729&showComments=true&amp;showCommentArea=true#addcomment" id="add-comment-rte" accesskey="m" class="toolbar-trigger full-load">添加评论</a></span>
+                </p>
+            </div>
+            </div>
+
+
+            
+</div>
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+</div>
+  
+    </div>
+</div>
+
+
+        
+            <div id="footer">
+
+    <section class="footer-body">
+
+                        
+    
+
+    <ul id="poweredby">
+        <li class="noprint">由以下机构提供技术支持：<a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.4.4</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
+        <li class="print-only">由以下机构打印：Atlassian Confluence 5.4.4, Team Collaboration Software.</li>
+        <li class="noprint"><a href="http://jira.atlassian.com/secure/BrowseProject.jspa?id=10470" class="hover-footer-link">报告缺陷</a></li>
+        <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian 新闻</a></li>
+    </ul>
+
+    
+
+            
+    
+    </section>
+
+</div>
+
+            
+    </div>
+</body>
+</html>
