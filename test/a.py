@@ -1,10 +1,5 @@
 #coding=utf-8
-import urllib2
-import cookielib
-cookie = cookielib.CookieJar()
-handler = urllib2.HTTPCookieProcessor(cookie)
-opener = urllib2.build_opener(handler)
-response = opener.open('http://www.baidu.com/')
-for item in cookie:
-    print 'Name =' +item.name
-    print 'Value =' +item.value
+help_msg ='''Usage: python tomcat_install.py   -s 7011 -p 8080 -d webapps -wpath '/' -tpath 'tomcat_path'  -jp 8088 -hostname 10.19.0.42"'''
+print help_msg.index("-s")
+print help_msg.index("-p")
+

@@ -17,7 +17,7 @@
 <meta id="confluence-context-path" name="confluence-context-path" content="">
 <meta id="confluence-base-url" name="confluence-base-url" content="http://wiki.haodaibao.com">
 
-<meta id="atlassian-token" name="atlassian-token" content="5b810b640f44edad2a221e6dea79bd8cba1ba9c3">
+<meta id="atlassian-token" name="atlassian-token" content="995a88b6cf0f3e9b2125631b794fa4654ce39939">
 
 <meta id="confluence-space-key" name="confluence-space-key" content="ops">
 <script type="text/javascript">
@@ -63,7 +63,7 @@
 
 <!-- end system css resources -->
 
-    <meta name="confluence-request-time" content="1441263437947">
+    <meta name="confluence-request-time" content="1441272753749">
         
     
         
@@ -101,7 +101,7 @@
             <meta name="ajs-global-settings-attachment-max-size" content="10485760">
             <meta name="ajs-user-locale" content="zh_CN">
             <meta name="ajs-enabled-dark-features" content="sync.event">
-            <meta name="ajs-atl-token" content="5b810b640f44edad2a221e6dea79bd8cba1ba9c3">
+            <meta name="ajs-atl-token" content="995a88b6cf0f3e9b2125631b794fa4654ce39939">
             <meta name="ajs-confluence-flavour" content="VANILLA">
             <meta name="ajs-editor.loader.resources" content="&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/667b9af93551d70c39b1eecf4cf815fd/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css&quot; media=&quot;all&quot;&gt;
 &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e/zh_CN-1988229788/4733/f235dd088df5682b0560ab6fc66ed22c9124c0be.11/667b9af93551d70c39b1eecf4cf815fd/_/download/contextbatch/css/editor,macro-browser,fullpage-editor,-viewcontent,-atl.general/batch.css?media=%28max-width%3A+1450px%29&quot; media=&quot;(max-width: 1450px)&quot;&gt;
@@ -642,7 +642,7 @@
                             
     
     
-    <a  id="page-favourite" href="/labels/addfavourite.action?entityId=2523729&amp;atl_token=5b810b640f44edad2a221e6dea79bd8cba1ba9c3" rel="nofollow"  class="action-page-favourite"   title="">
+    <a  id="page-favourite" href="/labels/addfavourite.action?entityId=2523729&amp;atl_token=995a88b6cf0f3e9b2125631b794fa4654ce39939" rel="nofollow"  class="action-page-favourite"   title="">
                 <span>收藏夹</span>    </a>
 </li>
                                 </ul>

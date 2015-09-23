@@ -1,4 +1,12 @@
-1.好贷宝后台 p2p_oms oms.haodaibao.com
-2.好贷宝主站 p2p_online www.haodaibao.com
-
+1.邯郸银行 tomcat-hde_website e.hdcb.cn
+2.邯郸oms tomcat-hde_oms bankoms.haodaibao.com
+3.金斗云 tomcat-jindouyun_website e.sxxrcb.com
+4.金斗云oms tomcat-jindouyun_oms xyoms.haodaibao.com
+5.郑州银行 tomcat-bank_zhengzhou_service bankapi.haodaibao.com
+6.银行短信平台 tomcat-sms_webservice banksms.haodaibao.com
+7.银行平台oms tomcat-bank_oms unionoms.haodaibao.com
+8.银行平台 tomcat-userService userService
+9.银行平台 tomcat-bankserver bankserver
+10.银行平台 tomcat-passport passport
+11.银行平台 tomcat-ROOT ROOT
 
