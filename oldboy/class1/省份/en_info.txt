@@ -1,0 +1,6 @@
+HB:handan:shexian,wuan,yongnian,handan,cixian
+HB:shijiazhuang:shijiazhuangshi,pingshanxian,jingjingxian,luanchengxian
+HN:anyangshi:wenfengshi,beiguanqu
+HN:zhengzhoushi:xinzheng,gongyi,xinmi
+SX:taiyuanshi:gujishi,yangquxian,qingxuxian
+SX:changzhishi:changzhishi,lichengxian,huguanxian
