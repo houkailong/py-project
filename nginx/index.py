@@ -12,14 +12,13 @@ def show_list(_num):
     item = upstream_nginx.Choice_item()
     item_list = [i for i in item]
     global Item_num
-    input_num = _num
-    Item_num = [x for x in input_num.split()]
-    try:
-        for n in Item_num:
-            int(n)
-    except ValueError as e:
-        print u'\033[1;31;40m请输入数字！\033[0m'
-    '''
+#    input_num = _num
+#    Item_num = [x for x in input_num.split()]
+#    try:
+#        for n in Item_num:
+#            int(n)
+#    except ValueError as e:
+#        print u'\033[1;31;40m请输入数字！\033[0m'
     while True:
         print '*' * 40
         for b in range(len(item_list)):
@@ -43,7 +42,6 @@ def show_list(_num):
             print u'\033[1;31;40m请输入数字！\033[0m'
             continue
     pass
-    '''
 
 def show_ser_static(f1):
     #获取到upstream 名字列表，以实现多项目同时操作，如银行平台
@@ -111,11 +109,12 @@ def nginx_switch(f1,f2):
 
 if __name__ == '__main__':
     #argv = sys.argv()[0:]
-    argv = ['1 2','modify','1 2']
+    #argv = ['1 2','modify','1 2']
     upstream_nginx = upstream_info.Upstream_Nginx()
     f1 = 'conf/nginx.conf'
     f2 = 'conf/nginx.conf2'
-    show_list(argv[0])
+    #show_list(argv[0])
+    show_list()
     switch = nginx_switch(f1,f2)
     Input_fun = argv[1]
     if switch.has_key(Input_fun):
